@@ -290,3 +290,61 @@ header p {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+/* === Navbar del Blog === */
+.navbar-blog {
+  background: #003366;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 50px;
+}
+
+.nav-blog-logo {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5px 10px;
+  background: #0055b3;
+  border-radius: 6px;
+}
+
+.nav-blog-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-blog-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-blog-link:hover {
+  color: #6eceda;
+  text-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+/* Ajuste del header para que no quede debajo del navbar */
+header {
+  margin-top: 60px; /* Espacio para el navbar fijo */
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

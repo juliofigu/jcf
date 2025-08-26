@@ -10,7 +10,28 @@
 </head>
 <body>
 
-  <!-- Header -->
+<!-- Navbar - Pestañas del Blog -->
+<nav class="navbar-blog">
+  <div class="nav-blog-container">
+    <a href="https://juliofigu.blogspot.com" class="nav-blog-logo">Blog</a>
+    <ul class="nav-blog-menu">
+      <li class="nav-blog-item">
+        <a href="hallacas.html" class="nav-blog-link" >Hallacas Maracuchas</a>
+      </li>
+      <li class="nav-blog-item">
+        <a href="aga-gas.html" class="nav-blog-link">Recuerdo AGA GAS</a>
+      </li>
+      <li class="nav-blog-item">
+        <a href="viaje-san-carlos.html"  class="nav-blog-link">Viaje a San Carlos</a>
+      </li>
+      <li class="nav-blog-item">
+        <a href="puertos-4x4.html"  class="nav-blog-link">Los Puertos 4x4</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Header -->
   <header>
     <div class="container">
       <h1>Julio Figueroa</h1>
@@ -18,6 +39,8 @@
     </div>
   </header>
 
+
+  
   <!-- Hero / Collage de Servicios -->
   <section class="services-grid">
     <div class="service-item">
@@ -91,7 +114,7 @@
 <section class="contact">
   <div class="container">
     <h2>Contáctame</h2>
-    <p>¿Tienes un proyecto o necesitas soporte técnico? Escríbeme y con gusto te ayudaré.</p>
+    <p>¿Tienes un requerimiento o necesitas soporte técnico? Escríbeme y con gusto te ayudaré.</p>
     
     <form action="https://formspree.io/f/xovnqaeq" method="POST">
       <input type="text" name="name" placeholder="Tu nombre" required>
@@ -117,5 +140,8 @@
   <script src="script.js"></script>
 </body>
 
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </html>
-
+<meta name="description" content="Recuerdos personales de Julio Figueroa: Hallacas Maracuchas, aventuras 4x4, viajes y momentos familiares.">

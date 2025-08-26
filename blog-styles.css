@@ -1,0 +1,159 @@
+/* === Estilos exclusivos para páginas del blog === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px; /* Espacio para navbar fijo */
+}
+
+/* === Navbar del Blog === */
+.navbar-blog {
+  background: #003366;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: 50px;
+}
+
+.nav-blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.nav-blog-logo {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5px 10px;
+  background: #0055b3;
+  border-radius: 6px;
+}
+
+.nav-blog-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-blog-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-blog-link:hover {
+  color: #6eceda;
+}
+
+/* === Contenido del Blog === */
+.container-blog {
+  max-width: 1000px;
+  margin: 80px auto 60px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.container-blog h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.container-blog img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 15px 0;
+  display: block;
+}
+
+.container-blog p, .container-blog div {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+/* === Footer del Blog === */
+.footer {
+  background: #003366;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  border-top: 1px solid #0055b3;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #6eceda;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* === WhatsApp Flotante === */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .container-blog {
+    padding: 20px;
+    margin: 70px auto 60px;
+  }
+}
