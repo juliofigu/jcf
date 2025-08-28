@@ -548,3 +548,79 @@ NK-hc-logo:hover {
     padding:4px 8px;
   }
 }
+/* ===NavbarPersonalizado para móviles === */
+navbar-hc {
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+  background:#003366; /* Fondo azul oscuro */
+  color:white;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  height:50px;
+}
+
+hc-hc-container {
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+justify-content:space-between; /* Pestañas izq, iniccio der */
+ align-items:center;
+  padding:0 20px;
+  height:100%;
+}
+
+hc-hc-menu {
+  display:flex;
+  list-style:none;
+  gap:1.2rem;
+ margin:0;
+  padding:0;
+  flex-wrap:wrap; /*Para móvil*/
+
+}
+
+hc-hc-link {
+  color:#e0e0e0;
+  text-decoration:none;
+ font-size:0.9rem;
+  font-weight:500;
+  transition:color 0.3s ease;
+  white-space:nowrap;
+}
+
+hc-hc-link:hover {
+  color:#6eceda;
+}
+
+hc-hc-logo {
+  color:white;
+ font-size:1rem;
+  font-weight:600;
+  text-decoration:none;
+  padding:5px 10px;
+  background:#0055b3;
+  border-radius:6px;
+  white-space:nowrap;
+  min-width:70px;
+  text-align:center;
+}
+
+hc-hc-logo:hover {
+  background:#0077d6;
+}
+
+/*Responsive: Ajuste en pantallas pequeñas*/
+@media (max-width:768px) {
+  .nav-hc-menu {
+    gap:0.8rem;
+    font-size:0.85rem;
+  }
+  .nav-hc-link {
+    font-size:0.8rem;
+  }
+  .nav-hc-logo {
+    font-size:0.9rem;
+    padding:4px 8px;
+  }
+}
