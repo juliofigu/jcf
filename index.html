@@ -4,30 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Julio Figueroa - Servicios Técnicos y Gerencia Industrial</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Julio Figueroa: recuerdos personales y experiencia en informática, gestión industrial, soporte técnico IT y desarrollo web. Servicios tecnológicos personalizados, experiencia a sus servicios.">  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 </head>
 <body>
 
-<!-- Navbar - Pestañas del Blog -->
-<nav class="navbar-blog">
-  <div class="nav-blog-container">
-    <a href="https://juliofigu.blogspot.com" class="nav-blog-logo">Blog</a>
-    <ul class="nav-blog-menu">
-      <li class="nav-blog-item">
-        <a href="hallacas.html" class="nav-blog-link" >Hallacas Maracuchas</a>
-      </li>
-      <li class="nav-blog-item">
-        <a href="aga-gas.html" class="nav-blog-link">Recuerdo AGA GAS</a>
-      </li>
-      <li class="nav-blog-item">
-        <a href="viaje-san-carlos.html"  class="nav-blog-link">Viaje a San Carlos</a>
-      </li>
-      <li class="nav-blog-item">
-        <a href="puertos-4x4.html"  class="nav-blog-link">Los Puertos 4x4</a>
-      </li>
+<!-- Navbar fijo - Pestañas a la izquierda, Inicio a la derecha -->
+<nav class="navbar-custom">
+  <div class="nav-custom-container">
+    <!-- Pestañas del Blog (izquierda) -->
+    <ul class="nav-custom-menu">
+      <li><a href="hallacas.html" class="nav-custom-link">Hallacas Maracuchas</a></li>
+      <li><a href="aga-gas.html" class="nav-custom-link">Recuerdo AGA GAS</a></li>
+      <li><a href="viaje-san-carlos.html" class="nav-custom-link">Viaje a San Carlos</a></li>
+      <li><a href="puertos-4x4.html" class="nav-custom-link">Los Puertos 4x4</a></li>
     </ul>
+
+    <!-- Botón Inicio (derecha) -->
+    <a href="https://juliofigu.blogspot.com" class="nav-custom-logo">BLOG</a>
   </div>
 </nav>
 
@@ -138,10 +133,17 @@
   </a>
 
   <script src="script.js"></script>
+  <div style="text-align: center; margin-top: 60px; padding: 20px;background: #003366;color: #ccc;font-family: Arial,sans-serif;font-size: 0.9rem;border-top: 1px solid #0055b3;">
+  <p>&copy; <span id="current-year"></span> Julio Figueroa</p>
+  <p>Preservando recuerdos personales, familiares y profesionales, Hecho con orgullo maracucho</p>
+</div>
+
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 </body>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </html>
-<meta name="description" content="Recuerdos personales de Julio Figueroa: Hallacas Maracuchas, aventuras 4x4, viajes y momentos familiares.">
