@@ -9,124 +9,124 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
   <style>
-    /* Estilo general de la página */
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-    .container-blog {
-      max-width: 1000px;
-      margin: 80px auto 60px;
-      padding: 30px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
-    .container-blog h2 {
-      color: #003366;
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-    }
-    .container-blog img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin: 15px 0;
-      display: block;
-    }
-    .container-blog p, .container-blog div {
-      font-size: 1.05rem;
-      margin-bottom: 15px;
-    }
-    .container-blog a img {
-      border: none;
-    }
+  /* Estilo general de la página */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  .container-blog {
+    max-width: 1000px;
+    margin: 80px auto 60px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  .container-blog h2 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  /* 🔹 Ajuste: centrar todas las imágenes */
+  .container-blog img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 15px auto;     /* antes: 15px 0 → ahora centrado */
+    display: block;        /* asegura que funcione el margin auto */
+  }
+  .container-blog p, .container-blog ul, .container-blog ol {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+  }
+  .container-blog strong {
+    color: #2b00fe;
+  }
+  .container-blog a img {
+    border: none;
+  }
+  .footer-note {
+    text-align: center;
+    font-style: italic;
+    color: #2b00fe;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
 
-    /* Estilos específicos del contenido */
-    .centered {
-      text-align: center;
-    }
-    .large-red {
-      font-size: large;
-      color: red;
-      font-weight: bold;
-    }
-    .courier-text {
-      font-family: 'Courier New', Courier, monospace;
-    }
+  /* Navbar */
+  .navbar-blog {
+    background: #003366;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .nav-blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+  }
+  .nav-blog-logo {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #0055b3;
+    border-radius: 6px;
+  }
+  .nav-blog-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-blog-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+  }
+  .nav-blog-link:hover {
+    color: #6eceda;
+  }
 
-    /* Navbar */
-    .navbar-blog {
-      background: #003366;
-      color: white;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .nav-blog-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
-      height: 50px;
-    }
-    .nav-blog-logo {
-      color: white;
-      font-size: 1rem;
-      font-weight: 600;
-      text-decoration: none;
-      padding: 5px 10px;
-      background: #0055b3;
-      border-radius: 6px;
-    }
-    .nav-blog-menu {
-      display: flex;
-      list-style: none;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-    .nav-blog-link {
-      color: #e0e0e0;
-      text-decoration: none;
-      font-size: 0.95rem;
-      transition: color 0.3s ease;
-    }
-    .nav-blog-link:hover {
-      color: #6eceda;
-    }
+  /* WhatsApp flotante */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+  }
+  .whatsapp-btn:hover {
+    transform: scale(1.1);
+  }
+</style>
 
-    /* WhatsApp flotante */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 60px;
-      height: 60px;
-      background: #25D366;
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-      z-index: 1000;
-      text-decoration: none;
-    }
-    .whatsapp-btn:hover {
-      transform: scale(1.1);
-    }
-  </style>
 </head>
 <body>
 
