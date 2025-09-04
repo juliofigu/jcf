@@ -535,7 +535,7 @@ NK-hc-logo:hover {
 }
 
 /*Responsive: Ajuste en pantallas pequeñas*/
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .nav-hc-menu {
     gap:0.8rem;
     font-size:0.85rem;
@@ -611,7 +611,7 @@ hc-hc-logo:hover {
 }
 
 /*Responsive: Ajuste en pantallas pequeñas*/
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .nav-hc-menu {
     gap:0.8rem;
     font-size:0.85rem;
@@ -624,86 +624,5 @@ hc-hc-logo:hover {
     padding:4px 8px;
   }
 }
-/* Ajustes responsivos para navbar en móviles */
-@media (max-width: 768px) {
-  .nav-blog-container {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 10px 20px;
-  }
-  .nav-blog-menu {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.8rem;
-    margin-bottom: 10px;
-  }
-  .nav-blog-menu li {
-    text-align: center;
-  }
-  .nav-blog-link {
-    font-size: 1rem;
-    display: block;
-    padding: 8px 0;
-  }
-   .nav-blog-logo {
-    order: 1;
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
-    font-size: 1.1rem;
-    padding: 8px 0;
-  }
-}
-/* Botón hamburguesa - oculto en desktop */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* Estilos para menú hamburguesa en móviles */
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-  }
-  .nav-blog-menu {
-    position: absolute;
-    top: 50px; /* justo debajo de la navbar */
-    left: 0;
-    right: 0;
-    background: #003366;
-    flex-direction: column;
-    display: none; /* oculto por defecto */
-    padding: 10px 0;
-    z-index: 9999;
-  }
-  .nav-blog-menu.active {
-    display: flex;
-  }
-  .nav-blog-menu li {
-    text-align: center;
-    margin: 10px 0;
-  }
-  .nav-blog-link {
-    font-size: 1.1rem;
-    padding: 8px 0;
-    display: block;
-  }
-  .nav-blog-logo {
-    order: 2;
-    font-size: 1.1rem;
-  }
-  .nav-blog-container {
-    position: relative;
-    height: 50px;
-    align-items: center;
-  }
-}
-
-
-
 
 

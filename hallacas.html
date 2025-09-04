@@ -212,19 +212,6 @@
 <!-- Navbar -->
 <nav class="navbar-blog">
   <div class="nav-blog-container">
-<nav class="navbar-blog">
-  <div class="nav-blog-container">
-    <button class="nav-toggle" aria-label="Abrir menú">
-      <i class="fas fa-bars"></i>
-    </button>
-    <ul class="nav-blog-menu">
-      <li><a href="aga-gas.html" class="nav-blog-link">Recuerdo AGA GAS</a></li>
-      <li><a href="viaje-san-carlos.html" class="nav-blog-link">Viaje a San Carlos</a></li>
-      <li><a href="puertos-4x4.html" class="nav-blog-link">Los Puertos 4x4</a></li>
-    </ul>
-    <a href="index.html" class="nav-blog-logo">Inicio</a>
-  </div>
-</nav>
     <ul class="nav-blog-menu">
       <li><a href="aga-gas.html" class="nav-blog-link">Recuerdo AGA GAS</a></li>
       <li><a href="viaje-san-carlos.html" class="nav-blog-link">Viaje a San Carlos</a></li>
@@ -382,21 +369,7 @@
 <script>
   document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
-<script>
-  const navToggle = document.querySelector('.nav-toggle');
-  const navMenu = document.querySelector('.nav-blog-menu');
 
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-
-  // Cerrar menú al hacer clic en un enlace (opcional)
-  navMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
-    });
-  });
-</script>
 </body>
 
 </html>
