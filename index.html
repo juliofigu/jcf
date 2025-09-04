@@ -11,20 +11,26 @@
 <body>
 
 <!-- Navbar fijo - Pestañas a la izquierda, Inicio a la derecha -->
-<nav class="navbar-custom">
-  <p></p>
-  <div class="nav-custom-container">
-    
-    <!-- Pestañas del Blog (izquierda) -->
-    <ul class="nav-custom-menu">
-      <li><a href="hallacas.html" class="nav-custom-link">Hallacas Maracuchas</a></li>
-      <li><a href="aga-gas.html" class="nav-custom-link">Recuerdo AGA GAS</a></li>
-      <li><a href="viaje-san-carlos.html" class="nav-custom-link">Viaje a San Carlos</a></li>
-      <li><a href="puertos-4x4.html" class="nav-custom-link">Los Puertos 4x4</a></li>
-    </ul>
+<!-- Navbar Responsive con Menú Hamburguesa -->
+<nav class="navbar">
+  <div class="nav-container">
+    <!-- Logo / Inicio -->
+    <a href="index.html" class="nav-logo">Inicio</a>
 
-    <!-- Botón Inicio (derecha) -->
-    <a href="https://juliofigu.blogspot.com" target="_blank" class="nav-custom-logo">BLOG</a>
+    <!-- Botón Hamburguesa -->
+    <button class="nav-toggle" id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menú de Navegación -->
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="hallacas.html" class="nav-link">Hallacas Maracuchas</a></li>
+      <li><a href="aga-gas.html" class="nav-link">Recuerdo AGA GAS</a></li>
+      <li><a href="viaje-san-carlos.html" class="nav-link">Viaje a San Carlos</a></li>
+      <li><a href="puertos-4x4.html" class="nav-link">Los Puertos 4x4</a></li>
+    </ul>
   </div>
 </nav>
 
@@ -142,6 +148,22 @@
 
 <script>
   document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+<script>
+  // Menú hamburguesa
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  // Cerrar menú al hacer clic en un enlace
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
 </script>
 </body>
 
