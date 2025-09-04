@@ -155,69 +155,127 @@
       border-top: 1px dashed #ddd;
     }
 
-    /* Navbar */
-    .navbar-blog {
-      background: #003366;
-      color: white;
+    /* Estilo del navbar */
+  .navbar {
+    background: #003366;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+  }
+
+  .nav-logo {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #0055b3;
+    border-radius: 6px;
+  }
+
+  /* Menú hamburguesa */
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+  }
+
+  /* Menú de enlaces */
+  .nav-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #6eceda;
+  }
+
+  /* Responsive: Pantallas pequeñas */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: flex;
+    }
+
+    .nav-menu {
       position: fixed;
-      top: 0;
+      left: -100%;
+      top: 50px;
+      flex-direction: column;
+      background: #003366;
       width: 100%;
-      z-index: 1000;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .nav-blog-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
-      height: 50px;
-    }
-    .nav-blog-logo {
-      color: white;
-      font-size: 1rem;
-      font-weight: 600;
-      text-decoration: none;
-      padding: 5px 10px;
-      background: #0055b3;
-      border-radius: 6px;
-    }
-    .nav-blog-menu {
-      display: flex;
-      list-style: none;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-    .nav-blog-link {
-      color: #e0e0e0;
-      text-decoration: none;
-      font-size: 0.95rem;
-      transition: color 0.3s ease;
-    }
-    .nav-blog-link:hover {
-      color: #6eceda;
-    }
-  .prep-text {      font-family: 'Poppins', sans-serif;
-      font-size: 1.05rem;
-      color: #444;
       text-align: center;
-      line-height: 1.8;
-}
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px 0;
+    }
+
+    .nav-menu.active {
+      left: 0;
+    }
+
+    .nav-menu li {
+      margin: 15px 0;
+    }
+  }
   </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar-blog">
-  <div class="nav-blog-container">
-    <ul class="nav-blog-menu">
-      <li><a href="aga-gas.html" class="nav-blog-link">Recuerdo AGA GAS</a></li>
-      <li><a href="viaje-san-carlos.html" class="nav-blog-link">Viaje a San Carlos</a></li>
-      <li><a href="puertos-4x4.html" class="nav-blog-link">Los Puertos 4x4</a></li>
+<!-- Navbar Responsive con Menú Hamburguesa -->
+<nav class="navbar">
+  <div class="nav-container">
+    <!-- Logo o Inicio -->
+    <a href="index.html" class="nav-logo">Inicio</a>
+
+    <!-- Botón hamburguesa (solo visible en móvil) -->
+    <button class="nav-toggle" id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menú de enlaces -->
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="aga-gas.html" class="nav-link">Recuerdo AGA GAS</a></li>
+      <li><a href="viaje-san-carlos.html" class="nav-link">Viaje a San Carlos</a></li>
+      <li><a href="puertos-4x4.html" class="nav-link">Los Puertos 4x4</a></li>
     </ul>
-    <a href="index.html" class="nav-blog-logo">Inicio</a>
   </div>
 </nav>
 
@@ -369,7 +427,22 @@
 <script>
   document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
+<script>
+  // Menú hamburguesa
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
 
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  // Opcional: cerrar menú al hacer clic en un enlace
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
 </body>
 
 </html>
