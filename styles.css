@@ -624,3 +624,33 @@ hc-hc-logo:hover {
     padding:4px 8px;
   }
 }
+/* Ajustes responsivos para navbar en móviles */
+@media (max-width: 600px) {
+  .nav-blog-container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 20px;
+  }
+  .nav-blog-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+    margin-bottom: 10px;
+  }
+  .nav-blog-menu li {
+    text-align: center;
+  }
+  .nav-blog-link {
+    font-size: 1rem;
+    display: block;
+    padding: 8px 0;
+  }
+  .nav-blog-logo {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    padding: 8px 0;
+ }
+}
