@@ -381,5 +381,21 @@
 <script>
   document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
+<script>
+  // Menú hamburguesa
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  // Opcional: cerrar menú al hacer clic en un enlace
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
 </body>
 </html>
