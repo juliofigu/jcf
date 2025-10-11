@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<!DOCTYPE html>
-<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -16,331 +14,398 @@
   <meta name="robots" content="index, follow, max-image-preview:large">
 
   <!-- URL canónica (evita contenido duplicado) -->
-  <link rel="canonical" href="https://juliofigu.github.io/jcf/" />
+  <link rel="canonical" href="https://juliofigu.github.io/jcf/hallacas.html" />
 
   <!-- Open Graph / Facebook (para compartir en redes) -->
   <meta property="og:locale" content="es_ES">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Receta de Hallacas Maracuchas - Julio Figueroa | Cabimeras Auténticas">
   <meta property="og:description" content="La receta definitiva de Hallacas Maracuchas, paso a paso, con fotos y tips familiares. Hechas con amor en Cabimas, Zulia.">
-  <meta property="og:url" content="https://juliofigu.github.io/jcf/">
+  <meta property="og:url" content="https://juliofigu.github.io/jcf/hallacas.html">
   <meta property="og:site_name" content="Julio Figueroa">
-  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNW7I4ZagfkJl5bderDJ8RJRQf32Cx2j98gKoRAZpncLxU98UZWRgVxnOsaV-vMKASlWvAtfTktDBiuTPdWTZPp08SbdSZcai4s6NKK9Wa31ZblQ9WcUqH8psAMkesugjGEB51j5BSW172/s320/2012-12-23+18.23.01.jpg">
+  <meta property="og:image" content="imagenes/hallacas/halla-2.jpg">
   <meta property="og:image:width" content="320">
   <meta property="og:image:height" content="240">
   <meta property="og:image:alt" content="Hallacas Maracuchas preparadas por Julio Figueroa">
 
   <!-- Twitter Card -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:site" content="@tu_usuario_si_tienes">
   <meta property="twitter:title" content="Receta de Hallacas Maracuchas - Julio Figueroa">
   <meta property="twitter:description" content="La auténtica receta de Hallacas Maracuchas, como las hacía mi mamá. Ideal para Navidad y Fin de Año.">
-  <meta property="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNW7I4ZagfkJl5bderDJ8RJRQf32Cx2j98gKoRAZpncLxU98UZWRgVxnOsaV-vMKASlWvAtfTktDBiuTPdWTZPp08SbdSZcai4s6NKK9Wa31ZblQ9WcUqH8psAMkesugjGEB51j5BSW172/s320/2012-12-23+18.23.01.jpg">
+  <meta property="twitter:image" content="imagenes/hallacas/halla-2.jpg">
 
-  <!-- Favicon (opcional, pero recomendado) -->
+  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Estilos y scripts -->
+  <!-- Estilos -->
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&family=Merriweather:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
-    /* Estilo general de la página */
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.8;
-      margin: 0;
-      padding: 0;
+    /* Estilos específicos para páginas de blog */
+    .blog-page {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      min-height: 100vh;
+      padding-top: 80px;
     }
 
-    /* Tipografía elegante para títulos */
-    .container-blog {
-      max-width: 1000px;
-      margin: 80px auto 60px;
-      padding: 30px;
+    .blog-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
       background: white;
-      border-radius: 15px;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+      position: relative;
+      overflow: hidden;
     }
 
-    .container-blog h2 {
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-	color: #1720D1;
-	text-align: center;
-	margin-bottom: 30px;
-	font-size: 2.2rem;
-	font-weight: 700;
-	letter-spacing: -0.5px;
-	margin-left: 21px;
+    .blog-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #2563eb, #10b981, #f59e0b);
     }
 
-    /* Texto principal */
-    .intro-text {
+    .blog-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+
+    .blog-title {
+      font-family: 'Playfair Display', serif;
+      color: #1f2937;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .blog-subtitle {
+      color: #6b7280;
+      font-size: 1.125rem;
+      font-style: italic;
+    }
+
+    .blog-intro {
       font-family: 'Merriweather', serif;
-      font-size: 1.1rem;
-      color: #444;
+      font-size: 1.125rem;
+      color: #374151;
+      line-height: 1.8;
+      margin-bottom: 2rem;
       text-align: justify;
-      margin-bottom: 25px;
-      line-height: 1.9;
+      padding: 1.5rem;
+      background: #f8fafc;
+      border-radius: 0.5rem;
+      border-left: 4px solid #2563eb;
     }
 
-    /* Títulos de sección */
     .section-title {
       font-family: 'Playfair Display', serif;
-      color: #c41c00;
+      color: #dc2626;
+      font-size: 1.875rem;
+      font-weight: 600;
+      margin: 3rem 0 1.5rem;
       text-align: center;
-      font-size: 1.6rem;
-      margin: 40px 0 20px;
-      font-weight: 600;
+      position: relative;
     }
 
-    /* Lista de ingredientes */
-    .ingredients {
-	background: #fff8f0;
-	border-left: 4px solid #c41c00;
-	padding: 20px;
-	border-radius: 10px;
-	margin-top: 25px;
-	margin-right: 0;
-	margin-bottom: 25px;
-	font-family: 'Poppins', sans-serif;
-	font-size: 0.98rem;
-	color: #555;
-    }
-    .ingredients li {
-      margin-bottom: 8px;
-      list-style: none;
-    }
-    .ingredients::before {
-      content: "📝";
-      margin-right: 8px;
-    }
-
-    /* Instrucciones */
-    .step {
-      background: #f0f8ff;
-      padding: 15px;
-      margin: 20px 0;
-      border-radius: 10px;
-      border-left: 4px solid #0055b3;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.05rem;
-      color: #333;
-      line-height: 1.7;
-    }
-    .step::before {
-      content: "🔹";
-      margin-right: 8px;
-    }
-
-    /* Destacados especiales */
-    .highlight {
-      color: #c41c00;
-      font-weight: 600;
-    }
-
-    /* Imágenes */
-    .container-blog img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-      margin: 20px auto;
-      display: block;
-      transition: transform 0.3s ease;
-    }
-    .container-blog img:hover {
-      transform: scale(1.02);
-    }
-
-    /* WhatsApp flotante */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
       width: 60px;
-      height: 60px;
-      background: #25D366;
+      height: 3px;
+      background: linear-gradient(90deg, #dc2626, #f59e0b);
+      border-radius: 2px;
+    }
+
+    .ingredients-section {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 1px solid #f59e0b;
+      position: relative;
+    }
+
+    .ingredients-section::before {
+      content: '📝';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .ingredients-title {
+      color: #92400e;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+
+    .ingredients-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 0.5rem;
+    }
+
+    .ingredients-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 0.375rem;
+      font-weight: 500;
+      color: #92400e;
+    }
+
+    .ingredients-list li::before {
+      content: '•';
+      color: #f59e0b;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .step {
+      background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid #2563eb;
+      position: relative;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #374151;
+    }
+
+    .step::before {
+      content: counter(step-counter);
+      counter-increment: step-counter;
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: #2563eb;
       color: white;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-      z-index: 1000;
-      text-decoration: none;
-    }
-    .whatsapp-btn:hover {
-      transform: scale(1.1);
+      font-weight: bold;
+      font-size: 0.875rem;
     }
 
-    /* Footer */
+    .steps-container {
+      counter-reset: step-counter;
+    }
+
+    .blog-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.75rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      margin: 1.5rem auto;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+    .blog-image:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+    }
+
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .highlight {
+      color: #dc2626;
+      font-weight: 700;
+      background-color: #fef2f2; /* fondo rojo muy claro (como el de alertas) */
+      padding: 0.1875rem 0.375rem;
+      border-radius: 0.25rem;
+      backdrop-filter: blur(2px); /* opcional: efecto moderno */
+    }
+
     .footer-note {
       text-align: center;
       font-style: italic;
-      color: #666;
-      margin-top: 50px;
-      font-size: 1.1rem;
+      color: #6b7280;
+      margin-top: 3rem;
+      padding: 2rem;
+      border-top: 2px dashed #e5e7eb;
       font-family: 'Merriweather', serif;
-      padding: 20px;
-      border-top: 1px dashed #ddd;
+      font-size: 1.125rem;
+      background: #f8fafc;
+      border-radius: 0.5rem;
     }
 
-    /* Estilo del navbar */
-  .navbar {
-    background: #003366;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
+    .breadcrumb {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
 
-  .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 50px;
-  }
+    .breadcrumb a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-  .nav-logo {
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 5px 10px;
-    background: #0055b3;
-    border-radius: 6px;
-  }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
 
-  /* Menú hamburguesa */
-  .nav-toggle {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-  }
+    .breadcrumb span {
+      color: #6b7280;
+      margin: 0 0.5rem;
+    }
 
-  .nav-toggle span {
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 3px 0;
-    transition: 0.3s;
-    border-radius: 2px;
-  }
-
-  /* Menú de enlaces */
-  .nav-menu {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-link {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-  }
-
-  .nav-link:hover {
-    color: #6eceda;
-  }
-
-  /* Responsive: Pantallas pequeñas */
-  @media (max-width: 768px) {
-    .nav-toggle {
+    .share-buttons {
       display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: #f8fafc;
+      border-radius: 0.5rem;
     }
 
-    .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 50px;
-      flex-direction: column;
-      background: #003366;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 20px 0;
+    .share-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      color: white;
     }
 
-    .nav-menu.active {
-      left: 0;
+    .share-btn.facebook { background: #1877f2; }
+    .share-btn.twitter { background: #1da1f2; }
+    .share-btn.whatsapp { background: #25d366; }
+
+    .share-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
-    .nav-menu li {
-      margin: 15px 0;
+    /* Responsive */
+    @media (max-width: 768px) {
+      .blog-container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+      
+      .blog-title {
+        font-size: 2rem;
+      }
+      
+      .ingredients-list {
+        grid-template-columns: 1fr;
+      }
+      
+      .share-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
     }
-  }
   </style>
 </head>
-<body>
+<body class="blog-page">
 
 <!-- Navbar -->
-<!-- Navbar Responsive con Menú Hamburguesa -->
-<!-- Navbar Responsive con Menú Hamburguesa -->
 <nav class="navbar">
   <div class="nav-container">
-    <!-- Logo / Inicio -->
-    <a href="index.html" class="nav-logo">Inicio</a>
+    <a href="index.html" class="nav-logo">
+      <i class="fas fa-home"></i> Inicio
+    </a>
 
-    <!-- Botón Hamburguesa -->
     <button class="nav-toggle" id="nav-toggle">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <!-- Menú de Navegación -->
     <ul class="nav-menu" id="nav-menu">
       <li><a href="aga-gas.html" class="nav-link">Recuerdo AGA GAS</a></li>
       <li><a href="viaje-san-carlos.html" class="nav-link">Viaje a San Carlos</a></li>
       <li><a href="puertos-4x4.html" class="nav-link">Los Puertos 4x4</a></li>
+      <li><a href="https://juliofigu.blogspot.com" target="_blank" class="nav-link">
+        <i class="fas fa-blog"></i> Blog Completo
+      </a></li>
     </ul>
   </div>
 </nav>
 
-<!-- Contenido -->
-<div class="container-blog">
-  <h2>PREPARACIÓN DE HALLACAS MARACUCHAS<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc4-86E3S2vVFiYJi1DQebiv77SbPfhiVZxSmPjWJ7ck1T-H6vps8yPy3bnjYENhwda96IG9-5I-d0lUh_IEumhwb-k07gpURg8LVMhi7NLJyZ37dXJk2NmXfl64JMwv-WpGKo_UOSdkU0/  " style="margin-left: 1em; margin-right: 1em;"><img alt="" data-original-height="183" data-original-width="275" height="266" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc4-86E3S2vVFiYJi1DQebiv77SbPfhiVZxSmPjWJ7ck1T-H6vps8yPy3bnjYENhwda96IG9-5I-d0lUh_IEumhwb-k07gpURg8LVMhi7NLJyZ37dXJk2NmXfl64JMwv-WpGKo_UOSdkU0/w400-h266/image.png  " width="400" />
-  </a>  </h2>
-  <div class="intro-text">
-    Todos los años religiosamente he preparado mis Hallacas, siguiendo siempre lo aprendido cuando niño, con mi mamá haciendo nuestras Hallacas Navideñas y de Fin de Año. También aplico conocimiento de una o dos veces que preparamos hallacas en casa de mi tía Stella.
+<!-- Breadcrumb -->
+<div class="container">
+  <div class="breadcrumb" data-aos="fade-down">
+    <a href="index.html">Inicio</a>
+    <span>></span>
+    <span>Hallacas Maracuchas</span>
+  </div>
+</div>
+
+<!-- Contenido Principal -->
+<div class="blog-container" data-aos="fade-up">
+  
+  <!-- Header del Blog -->
+  <div class="blog-header">
+    <h1 class="blog-title">PREPARACIÓN DE HALLACAS MARACUCHAS</h1>
+    <p class="blog-subtitle">Tradición familiar navideña con sabor auténtico zuliano</p>
+    <img src="imagenes/hallacas/PlatoHALLA-1.png" alt="Hallacas Maracuchas" class="blog-image" data-aos="zoom-in">
   </div>
 
-  <div class="intro-text">
+  <!-- Introducción -->
+  <div class="blog-intro" data-aos="fade-up">
+    Todos los años religiosamente he preparado mis Hallacas, siguiendo siempre lo aprendido cuando niño, con mi mamá haciendo nuestras Hallacas Navideñas y de Fin de Año. También aplico conocimientos de una o dos veces que preparamos hallacas en casa de mi tía Stella.
+  </div>
+
+  <div class="blog-intro" data-aos="fade-up" data-aos-delay="100">
     Lo bonito de la realización de las hallacas es la reunión de toda la familia y la asignación de tareas a cada uno de los participantes. Una persona que domine la masa, esta es la encargada de amasar la harina, los que se destaquen amarrando, bueno amarrarán, los más experimentados extenderán la masa, echarán una y media o dos cucharadas de guiso a la masa extendida y comienza a formarse una deliciosa hallaca. Este proceso se repite una y otra vez hasta concluir la faena con cientos de hallacas preparadas para degustar.
   </div>
 
-  <div class="intro-text">
-    Quiero compartir con todos los que por una u otra razón, se animen a realizar una Hallaca con Sabor Maracucho o Zuliano, para ser más específico CABIMERAS.
+  <div class="blog-intro" data-aos="fade-up" data-aos-delay="200">
+    Quiero compartir con todos los que por una u otra razón, se animen a realizar una Hallaca con Sabor Maracucho o Zuliano, para ser más específico <span class="highlight">CABIMERAS</span>.
   </div>
 
   <!-- Ingredientes -->
-  <h3 class="section-title">Ingredientes</h3>
-  <div style="text-align: right;">
-  <pre> <em></em>Rendimiento 150 hallacas.</pre>
-</div>
-<div class="ingredients">
-    <ul>
-      <li><em>3</em> kg carne de cerdo</li>
-<li>2 kg carne de res</li>
+  <h2 class="section-title" data-aos="fade-up">Ingredientes</h2>
+  <div style="text-align: right; margin-bottom: 1rem; font-style: italic; color: #6b7280;">
+    <em>Rendimiento: 150 hallacas</em>
+  </div>
+
+  <div class="ingredients-section" data-aos="fade-up">
+    <ul class="ingredients-list">
+      <li>3 kg carne de cerdo</li>
+      <li>2 kg carne de res</li>
       <li>2 kg papas</li>
       <li>½ kg zanahorias</li>
       <li>1 kg cebollas de cabezas</li>
@@ -367,121 +432,156 @@
       <li>Laurel</li>
       <li>Clavos de olor</li>
       <li>3 paquetes de hojas de plátano</li>
+      <li>4 paquetes de Harina de maíz</li>
+      <li>2 rollos de pavilo</li>
     </ul>
-    <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNW7I4ZagfkJl5bderDJ8RJRQf32Cx2j98gKoRAZpncLxU98UZWRgVxnOsaV-vMKASlWvAtfTktDBiuTPdWTZPp08SbdSZcai4s6NKK9Wa31ZblQ9WcUqH8psAMkesugjGEB51j5BSW172/s1600/2012-12-23+18.23.01.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNW7I4ZagfkJl5bderDJ8RJRQf32Cx2j98gKoRAZpncLxU98UZWRgVxnOsaV-vMKASlWvAtfTktDBiuTPdWTZPp08SbdSZcai4s6NKK9Wa31ZblQ9WcUqH8psAMkesugjGEB51j5BSW172/s320/2012-12-23+18.23.01.jpg  " width="320" /></a><br>
-	  <li>4 paquetes de Harina de maíz</li>
-    <li>2 rollos de pavilo</li>
-	  <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinsXJGYeuW_jrAqfnCy3OYVFnNmv8Ezo7NsAaDjbwKMmuWm1D8Vw24c0SfTiBWzy6Fch_EIThUuqYYTbRGFGZSuVVFHYH7fulDYqtU3MuSQo0Kr-7MOCXRLmY5NglaIci9eC9dPgkk3icg/s1600/2012-12-23+18.22.46.jpg  "><img border="0" height="150" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinsXJGYeuW_jrAqfnCy3OYVFnNmv8Ezo7NsAaDjbwKMmuWm1D8Vw24c0SfTiBWzy6Fch_EIThUuqYYTbRGFGZSuVVFHYH7fulDYqtU3MuSQo0Kr-7MOCXRLmY5NglaIci9eC9dPgkk3icg/s200/2012-12-23+18.22.46.jpg  " width="320" /></a></div>
+  </div>
 
   <!-- Preparación -->
-  <h3 class="section-title">Preparación</h3>
+  <h2 class="section-title" data-aos="fade-up">Preparación</h2>
 
-  <div class="step">
-  &nbsp;Con anticipación, ablandar las Carnes de Puercos y Res. Al Agua para ablandar las carnes, agregar Varias hojas de Laurel, Sal al gusto y 8 clavitos de olor. No dejar demasiado blanda las carnes, porque luego, durante la preparación del guiso se continuará el proceso de coción.</div>
-  <div class="step">
-  El agua que nos ha quedado de cocinar las Carnes. No botarla; poner a reducir esta agua, para luego ser usada en la preparación del guiso.  <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitdBkTu2pVcD7acprwqvhUm81nc1-GGddjmPoaLzJ2Gw_i-bfGvuDqr-btlMrvhLmuOQohs-_niiAoOeOBYuddgBorBqkl8r2ZE2CMBUQjdOF8B5ic6wgJxJgjyMLecW6VvBoYi2gOAEW5/s1600/2012-12-23+18.23.28.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitdBkTu2pVcD7acprwqvhUm81nc1-GGddjmPoaLzJ2Gw_i-bfGvuDqr-btlMrvhLmuOQohs-_niiAoOeOBYuddgBorBqkl8r2ZE2CMBUQjdOF8B5ic6wgJxJgjyMLecW6VvBoYi2gOAEW5/s320/2012-12-23+18.23.28.jpg  " width="320" /></a></div>
-  <p>&nbsp;</p>
-  <div class="step">
-    Picar las Carnes en cuadritos pequeños o de un tamaño al gusto. La grasa o Manteca, sobrante del Cerdo; les recomiendo, picarlas en trocitos bien pequeños y colocarla en un caldero con un poquito de agua. Cocinar hasta que la manteca se haga chicharrón; esta manteca que nos resulta de este proceso la utilizaremos para agregarla a la harina de maíz.
+  <div class="steps-container">
+    <div class="step" data-aos="fade-up" data-aos-delay="100">
+      Con anticipación, ablandar las Carnes de Puercos y Res. Al Agua para ablandar las carnes, agregar Varias hojas de Laurel, Sal al gusto y 8 clavitos de olor. No dejar demasiado blanda las carnes, porque luego, durante la preparación del guiso se continuará el proceso de coción.
+      <div class="image-gallery">
+      <img src="imagenes/hallacas/halla-1.jpg" alt="Rollo de Pavilo" class="blog-image">
+      <img src="imagenes/hallacas/halla-2.jpg" alt="Rollo de Pavilo y hojas de platano" class="blog-image">
+      </div>
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="200">
+      El agua que nos ha quedado de cocinar las Carnes. No botarla; poner a reducir esta agua, para luego ser usada en la preparación del guiso.
+      <img src="imagenes/hallacas/halla-4.jpg" alt="Caldo de carnes" class="blog-image">
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="300">
+      Picar las Carnes en cuadritos pequeños o de un tamaño al gusto. La grasa o Manteca, sobrante del Cerdo; les recomiendo, picarlas en trocitos bien pequeños y colocarla en un caldero con un poquito de agua. Cocinar hasta que la manteca se haga chicharrón; esta manteca que nos resulta de este proceso la utilizaremos para agregarla a la harina de maíz.
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="400">
+      Picar Vegetales finamente, Calentar el ½ lts de Aceite junto con el Achote, esto para darle color al aceite y por ende al Guiso. Se sofríe los Vegetales, hasta que estén tiernos. En este momento añadir: Sal, Adobo, Comino, el Ajo machacado, la Salsa Inglesa; todo al gusto.
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="500">
+      Añadir el agua que nos quedó anteriormente y que habíamos reservado para el guiso. Disolver una Panela en agua Caliente, poquita agua y luego verterla al guiso. (mejor si tomamos un poquito del agua del guiso y disolvemos la panela).
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="600">
+      Agregar los Garbanzos, las Alcaparras, la Mitad de las Aceitunas y la mitad de las Ciruelas Pasas. Agregar las Carnes. Y corregir los sabores. Dejar secar lo suficiente, hasta quedar un poquito jugoso.
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="700">
+      Las Papas y Zanahorias deben de estar previamente cocinadas y picadas (en cuadritos pequeños). Y agregar cuando el guiso este listo, incluso ya apagado, o sea fuera de la cocina. La mitad restantes de las Aceitunas y Ciruelas se le añaden una vez este frío el guiso. O justo antes de comenzar la preparación de las hallacas.
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="800">
+      Amasar; un (1) paquete de Harina de Maíz, con la Manteca que obtuvimos del Puerco y el Onoto para darle color. Y prepara las bolas de masa (rinde aprox. 23 a 25 bolas), dejarlas listas para extender sobre la hoja.
+      
+      <div class="image-gallery">
+        <img src="imagenes/hallacas/halla-3.jpg" alt="Preparando la masa" class="blog-image">
+        <img src="imagenes/hallacas/halla-5.jpg" alt="Masa preparada" class="blog-image">
+        <img src="imagenes/hallacas/halla-6.jpg" alt="Preparando las bolas de masa" class="blog-image">
+      </div>
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="800">
+      Debemos untar con aceite y onoto la hojas antes de extender la masa. Extender la Masa sobre la hoja y creo que no hace falta más explicación.
+      
+      <div class="image-gallery">
+        <img src="imagenes/hallacas/halla-7.jpg" alt="Aceite con onoto" class="blog-image">
+        <img src="imagenes/hallacas/halla-8.jpg" alt="Untando hojas con el aceite onotado" class="blog-image">
+        <img src="imagenes/hallacas/halla-9.jpg" alt="Extendiedo la masa sobre la hoja, previamente aceitada" class="blog-image">
+      </div>
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="800">
+      Luego de extender la masa, agregar una y media o dos cucharadas del guiso que hemos preparado previamente, poner Una y Media o Dos cucharadas en el centro de la masa extendida.
+      
+      <div class="image-gallery">
+        <img src="imagenes/hallacas/halla-10.jpg" alt="Colocar Rellenos" style="display: block; max-width: 500px; width: 100%; height: auto; margin: 0 auto;">
+        </div>
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="800">
+      Envolver con la hoja de plátano, cuidadosamente para no romper la hoja. Mi costumbre es, ir acumulando varias hallacas para luego amarrarlas. La manera de amarrar las hallacas, paso a paso.
+      
+      <div class="image-gallery">
+        <img src="imagenes/hallacas/halla-11.jpg" alt="Envolver la hallaca" class="blog-image">
+        <img src="imagenes/hallacas/halla-12.jpg" alt="Envolver la hallaca" class="blog-image">
+        <img src="imagenes/hallacas/halla-13.jpg" alt="Envolver la hallaca" class="blog-image">
+        <img src="imagenes/hallacas/halla-14.jpg" alt="Acumular las hallacas envueltas" class="blog-image">
+      </div>
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="800">
+      Mi constumbre es, ir acumulando varias hallacas para luego comenzar a amarrarlas.
+      
+      <div class="image-gallery">
+        <img src="imagenes/hallacas/halla-15.jpg" alt="Amarre paso a paso" class="blog-image">
+        <img src="imagenes/hallacas/halla-16.jpg" alt="Amarre paso a paso" class="blog-image">
+        <img src="imagenes/hallacas/halla-17.jpg" alt="Amarre paso a paso" class="blog-image">
+        <img src="imagenes/hallacas/halla-18.jpg" alt="Amarre paso a paso" class="blog-image">
+        <img src="imagenes/hallacas/halla-19.jpg" alt="Amarre paso a paso" class="blog-image">
+      </div>
+      Esta es la manera de amarrar mis hallacas, step by step.
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="800">
+      Pasar las hallacas por agua hirviendo por espacio de 30 min.
+      
+      <div class="image-gallery">
+        <img src="imagenes/hallacas/halla-20.jpg" alt="Hervir por 30 min." style="display: block; max-width: 500px; width: 100%; height: auto; margin: 0 auto;">
+        </div>
+    </div>
+
+    <div class="step" data-aos="fade-up" data-aos-delay="800">
+      En este punto estaremos dispuestos a catar el sabor de nuestras hallacas, las misma deben dejarse enfriar y meter a la nevera, cuando dispongamos de comer nuestras hallacas la calentamos nuevamente y a disfrutar.
+      
+      <div class="image-gallery">
+        <img src="imagenes/hallacas/halla-21.jpg" alt="Esperar a que se enfrien, para refrigerar" class="blog-image">
+        <img src="imagenes/hallacas/halla-22.jpg" alt="Todas estan frias, lista para meter a la nevera" class="blog-image">
+        </div>
+        <strong style="color: #2563eb;">Al fin me he decidido a montar mi receta</strong> que estaba esperando alrededor de dos años para publicarla en la web y compartir con el mundo entero la manera en la que preparo mis excelentes hallacas.
+    </div>
   </div>
 
-  <div class="step">
-    Picar Vegetales finamente, Calentar el ½ lts de Aceite junto con el Achote, esto para darle color al aceite y por ende al Guiso. Se sofríe los Vegetales, hasta que estén tiernos. En este momento añadir: Sal, Adobo, Comino, el Ajo machacado, la Salsa Inglesa; todo al gusto.
+  <!-- Botones de Compartir -->
+  <div class="share-buttons" data-aos="fade-up">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://juliofigu.github.io/jcf/hallacas.html" target="_blank" class="share-btn facebook">
+      <i class="fab fa-facebook-f"></i> Compartir
+    </a>
+    <a href="https://twitter.com/intent/tweet?url=https://juliofigu.github.io/jcf/hallacas.html&text=Receta de Hallacas Maracuchas por Julio Figueroa" target="_blank" class="share-btn twitter">
+      <i class="fab fa-twitter"></i> Tweetear
+    </a>
+    <a href="https://wa.me/?text=Mira esta receta de Hallacas Maracuchas: https://juliofigu.github.io/jcf/hallacas.html" target="_blank" class="share-btn whatsapp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
   </div>
 
-  <div class="step">
-    Añadir el agua que nos quedó anteriormente y que habíamos reservado para el guiso. Disolver una Panela en agua Caliente, poquita agua y luego verterla al guiso. (mejor si tomamos un poquito del agua del guiso y disolvemos la panela).
+  <!-- Nota Final -->
+  <div class="footer-note" data-aos="fade-up">
+    "Las hallacas no son solo comida, son tradición, familia y amor en cada bocado. 
+    Que esta receta mantenga viva la esencia <strong style="color: #2563eb;">maracucha</strong> en tu mesa navideña."
+    <br><br>
+    <strong>- Julio Figueroa, con cariño desde Cabimas, Zulia 🇻🇪</strong>
   </div>
-
-  <div class="step">
-    Agregar los Garbanzos, las Alcaparras, la Mitad de las Aceitunas y la mitad de las Ciruelas Pasas. Agregar las Carnes. Y corregir los sabores. Dejar secar lo suficiente, hasta quedar un poquito jugoso.
-  </div>
-
-  <div class="step">
-    Las Papas y Zanahorias deben de estar previamente cocinadas y picadas (en cuadritos pequeños). Y agregar cuando el guiso este listo, incluso ya apagado, o sea fuera de la cocina. La mitad restantes de las Aceitunas y Ciruelas se le añaden una vez este frío el guiso. O justo antes de comenzar la preparación de las hallacas.
-  </div>
-  <div class="step">
-    <p>Amasar; un (1) paquete de Harina de Maíz, con la Manteca que obtuvimos del Puerco y el Onoto para darle color. Y prepara las bolas de masa (rinde aprox. 23 a 25 bolas), dejarlas listas para extender sobre la hoja. </p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8tDFEKT7iy205BRJGpE7gwDHV-OwGv_WyNwfu7xwrg4cXQdcH_gkzCbBFmPtMe5yJhkyz7Og6vYiByx60GGZCl6qAR4xvWVdKjUg2NJ9ClJUbi9dYmnpofHc0ckZMF5jWmZ9qWQxO0Jca/s1600/2012-12-23+18.23.17.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8tDFEKT7iy205BRJGpE7gwDHV-OwGv_WyNwfu7xwrg4cXQdcH_gkzCbBFmPtMe5yJhkyz7Og6vYiByx60GGZCl6qAR4xvWVdKjUg2NJ9ClJUbi9dYmnpofHc0ckZMF5jWmZ9qWQxO0Jca/s320/2012-12-23+18.23.17.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyhcprYqjq33L-ux2aqsmJwSYqS53q2WIpfEHV8skHJhMzpr6sL16WUuLfgkN3U2owBwEjL3qryJ7HiWV7Yodhl53K-LJRj3OpdMiUJibfDq2-jBBgetVQ4sCuLKtSsPO8rpj6Vpmt9yYp/s1600/2012-12-23+18.39.56.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyhcprYqjq33L-ux2aqsmJwSYqS53q2WIpfEHV8skHJhMzpr6sL16WUuLfgkN3U2owBwEjL3qryJ7HiWV7Yodhl53K-LJRj3OpdMiUJibfDq2-jBBgetVQ4sCuLKtSsPO8rpj6Vpmt9yYp/s320/2012-12-23+18.39.56.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJC8w0TatJpFrFeLH53qLAm8fQcQdQxzaoOWQ5VQ8emRVN2jhDQ9E9Ab8c4JHFR3wchnmqnc1943ohcqBryLpHmGsKZRMZOCLDkifzKV60Y-T29DlVZhudmY47kxdzzHfQ-7F-qzQ1ZSUw/s1600/2012-12-23+18.48.30.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJC8w0TatJpFrFeLH53qLAm8fQcQdQxzaoOWQ5VQ8emRVN2jhDQ9E9Ab8c4JHFR3wchnmqnc1943ohcqBryLpHmGsKZRMZOCLDkifzKV60Y-T29DlVZhudmY47kxdzzHfQ-7F-qzQ1ZSUw/s320/2012-12-23+18.48.30.jpg  " width="320" /></a></p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-  </div>
-  <blockquote>
-    <pre>&nbsp;</pre>
-  </blockquote>
-<div class="step">
-    <p>Debemos untar con aceite y onoto la hojas antes de extender la masa. Extender la Masa sobre la hoja y creo que no hace falta más explicación. </p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP4_DuOEvAJSZCPs2FBB6nfsYMF2zwW9uP_LzLrEcP5xYrpR9QIljxkCJnhyphenhyphenu5vpYgj3ql8Gtlh0vLlvgUEE-ZKec_YziA33O7tpunHSQW-ny_2Z-KdPMgJ0fPqoimxSxTVo1YbMZf-vqP/s1600/2012-12-23+18.55.47.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP4_DuOEvAJSZCPs2FBB6nfsYMF2zwW9uP_LzLrEcP5xYrpR9QIljxkCJnhyphenhyphenu5vpYgj3ql8Gtlh0vLlvgUEE-ZKec_YziA33O7tpunHSQW-ny_2Z-KdPMgJ0fPqoimxSxTVo1YbMZf-vqP/s320/2012-12-23+18.55.47.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS-ggRoM650EFp61mHHDSkrDk7gOLV7h2ks6BrA01X7_snfTY2ro-K_ovF3SArss02IVkv6eL8WLJmGlD_LklYN1qGYCeFy7X37xxMatPwRfuNAq641HDBEO2tRABQ_i9YUhH0cH8yeysO/s1600/2012-12-23+18.55.56.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS-ggRoM650EFp61mHHDSkrDk7gOLV7h2ks6BrA01X7_snfTY2ro-K_ovF3SArss02IVkv6eL8WLJmGlD_LklYN1qGYCeFy7X37xxMatPwRfuNAq641HDBEO2tRABQ_i9YUhH0cH8yeysO/s320/2012-12-23+18.55.56.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJl_b59qMiBFvWtsU9gp0LanKMZyRwJWbzWdsdilvHWnqU74YZWEhULT5-UudzmxNv_8rOenTyBIkgGyo9QF9a7MEfdNpZX5EH5dPQDN9hD9rMSNbnyM700mGhBotZ9WogZI4BsXpniFUx/s1600/2012-12-23+18.56.16.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJl_b59qMiBFvWtsU9gp0LanKMZyRwJWbzWdsdilvHWnqU74YZWEhULT5-UudzmxNv_8rOenTyBIkgGyo9QF9a7MEfdNpZX5EH5dPQDN9hD9rMSNbnyM700mGhBotZ9WogZI4BsXpniFUx/s320/2012-12-23+18.56.16.jpg  " width="320" /></a></p>
-  </div>
-  <div class="step">
-    <p>Luego de extender la masa, agregar una y media o dos cucharadas del guiso que hemos preparado previamente. </p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji7ccqS9ztNA4URot-0e3QbKnIiEVPwKbryVb79F3Z1C0CGs21nnpEuzCNx714SDDEYjToPpso1l1OOB6-eKoXbzPnC2_a3yBmIZwga3crxb9TBeMAMYAz_oOWrEBaUZpn4Gw9M7u2ugtz/s1600/2012-12-23+19.56.58.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji7ccqS9ztNA4URot-0e3QbKnIiEVPwKbryVb79F3Z1C0CGs21nnpEuzCNx714SDDEYjToPpso1l1OOB6-eKoXbzPnC2_a3yBmIZwga3crxb9TBeMAMYAz_oOWrEBaUZpn4Gw9M7u2ugtz/s320/2012-12-23+19.56.58.jpg  " width="320" /></a></p>
-  </div>
-
-  <p>&nbsp;</p>
-  <p>&nbsp; </p>
-  <div class="step">
-    <p>Envolver con la hoja de plátano, cuidadosamente para no romper la hoja. Mi costumbre es, ir acumulando varias hallacas para luego amarrarlas. La manera de amarrar las hallacas, paso a paso. </p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh2rVDNpf5U63vDvUOg0MlZONabVvyDDnIZcsHHGZ5BzDmzLDEhP_ktMQLAsHD2dtlYULYMX9IUQiBTQJXfkuXHBj76Bmacay9e6WfqHdkG55iPfk27ul8S_BUY-1QL4ss_c7sZNhdTzIF/s1600/2012-12-23+19.57.32.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh2rVDNpf5U63vDvUOg0MlZONabVvyDDnIZcsHHGZ5BzDmzLDEhP_ktMQLAsHD2dtlYULYMX9IUQiBTQJXfkuXHBj76Bmacay9e6WfqHdkG55iPfk27ul8S_BUY-1QL4ss_c7sZNhdTzIF/s320/2012-12-23+19.57.32.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV29IJTPOg_jqZDwZFkblOOcJN0AsYgCu3hjb2ZR0N4OSsFayWTtIRX5cl0F8GwyPLOaD1LBOiphUSXu2EPV2Y5yaicxNTGOEXq9j44LLrbTDaWwst-vY8VqaEzUf261mgNk0a88gYQG84/s1600/2012-12-23+19.57.39.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV29IJTPOg_jqZDwZFkblOOcJN0AsYgCu3hjb2ZR0N4OSsFayWTtIRX5cl0F8GwyPLOaD1LBOiphUSXu2EPV2Y5yaicxNTGOEXq9j44LLrbTDaWwst-vY8VqaEzUf261mgNk0a88gYQG84/s320/2012-12-23+19.57.39.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij2uxyFV9oCtUWDRrKPPYyLkSNHZA5BpemYm5lG7vlEAkXch_n-Ed8rRnoAtgQSlyBFNrQrTY_DgBckx2ZtztyHbol0K9q56s_ZIaIqP6r9Av28IfxPD9IiLllvxMBUoJTtrkED-wHVtgK/s1600/2012-12-23+19.57.46.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij2uxyFV9oCtUWDRrKPPYyLkSNHZA5BpemYm5lG7vlEAkXch_n-Ed8rRnoAtgQSlyBFNrQrTY_DgBckx2ZtztyHbol0K9q56s_ZIaIqP6r9Av28IfxPD9IiLllvxMBUoJTtrkED-wHVtgK/s320/2012-12-23+19.57.46.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDQWLSNVJpT7-ToAX7O5kzZMEDUXYDzsfu7oQKbp6uBFtC-M3xGlQ7NFuNxNbgaPlFiKNRCaJZvSAo59MT1HYE4zXFvbRyU2peLae-SkAaNw_9o0gYcmsQ77aWxtZ9pJo5AwfKgOf8eYls/s1600/2012-12-23+19.57.58.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDQWLSNVJpT7-ToAX7O5kzZMEDUXYDzsfu7oQKbp6uBFtC-M3xGlQ7NFuNxNbgaPlFiKNRCaJZvSAo59MT1HYE4zXFvbRyU2peLae-SkAaNw_9o0gYcmsQ77aWxtZ9pJo5AwfKgOf8eYls/s320/2012-12-23+19.57.58.jpg  " width="320" /></a></p>
-    <p>Mi constumbre es, ir acumulando varias hallacas para luego comenzar a amarrarlas.</p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkStJrUDXsR0nmMbItrZR0v9d9bxXrac9RplVMYg8W9R1FEUCI-ZzfwakinYGNZKcNJB7pI23HAcqEV43hM_04Y50bxP4vuq0KcnywHDY80V5yXkNE6oxrKlZPfu8DsCWOLfKNTXrjGP5p/s1600/2012-12-23+20.33.38.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkStJrUDXsR0nmMbItrZR0v9d9bxXrac9RplVMYg8W9R1FEUCI-ZzfwakinYGNZKcNJB7pI23HAcqEV43hM_04Y50bxP4vuq0KcnywHDY80V5yXkNE6oxrKlZPfu8DsCWOLfKNTXrjGP5p/s320/2012-12-23+20.33.38.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQX4Mfz0Gh3DK2FFhboCYcV42Oh1d4wsHWKmGWuh_5bj3kyrAo8yn0UGR0an6WEJUaR4N5XB9-OKC-RPnNH6lsfXcsTi-R3FNoDE41IhFDc6OwIgvca-H4xku7ohPOgG7aT7FBtCrq26L1/s1600/2012-12-23+20.34.05.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQX4Mfz0Gh3DK2FFhboCYcV42Oh1d4wsHWKmGWuh_5bj3kyrAo8yn0UGR0an6WEJUaR4N5XB9-OKC-RPnNH6lsfXcsTi-R3FNoDE41IhFDc6OwIgvca-H4xku7ohPOgG7aT7FBtCrq26L1/s320/2012-12-23+20.34.05.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigQ3uJEaefSlY3dPpBbqlYtiwsA-mSg9GJ-9goXIF5plpKzIcfnMVzJoe6YhyDFYcx0X8tFdIgVnbS132QhdiYL1w8GXtARTBqdr87ZadeF2w4xdGV96TKGFitjDKdmhYTyo8iUcFijTZW/s1600/2012-12-23+20.34.40.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigQ3uJEaefSlY3dPpBbqlYtiwsA-mSg9GJ-9goXIF5plpKzIcfnMVzJoe6YhyDFYcx0X8tFdIgVnbS132QhdiYL1w8GXtARTBqdr87ZadeF2w4xdGV96TKGFitjDKdmhYTyo8iUcFijTZW/s320/2012-12-23+20.34.40.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGPcFrPvzxv7D2q3ZRCtepva0Ju0IvCauVjdHqZzAviEM0jwHa3HreMD1WQ9DytWEvjqi-ACGfTXNYrjfl9_N-rLDlov23DMi2G5ac7cHjH6HNKvK55j8MrOEE7jHpSEdIvW-H8osNZpMP/s1600/2012-12-23+20.35.05.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGPcFrPvzxv7D2q3ZRCtepva0Ju0IvCauVjdHqZzAviEM0jwHa3HreMD1WQ9DytWEvjqi-ACGfTXNYrjfl9_N-rLDlov23DMi2G5ac7cHjH6HNKvK55j8MrOEE7jHpSEdIvW-H8osNZpMP/s320/2012-12-23+20.35.05.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5nLGYERksfhBhMOE0Elud3IL76OzcZDheNyDK4P9K4HKdA-dmicm6AfefOWvZoc7OQxGSGQ1btB7H4r2zaZgh8_0dlgoRn0P_RG2EOvQXZ8Z_mJ6ZZKCjxF_uitk1sxskJRRmND9r3Xfj/s1600/2012-12-23+20.35.52.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5nLGYERksfhBhMOE0Elud3IL76OzcZDheNyDK4P9K4HKdA-dmicm6AfefOWvZoc7OQxGSGQ1btB7H4r2zaZgh8_0dlgoRn0P_RG2EOvQXZ8Z_mJ6ZZKCjxF_uitk1sxskJRRmND9r3Xfj/s320/2012-12-23+20.35.52.jpg  " width="320" /></a>Esta es la manera de<span style="font-family: trebuchet; font-size: medium; color: red"> </span>amarrar mis hallacas, step by step. </p>
-  </div>
-  <div class="step"> 
-    <p>Pasar las hallacas por agua hirviendo por espacio de 30 min. </p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaoYcAn4kTqlzuS-eoHMFJLL0NDCNL7wr9JNLpzhaikro4ZwbR_Oph_SD0ThvR6hiWARUfxlFi8B_MzFufzsWJWCjC-c2jjJPG0R_X6WEJZpZhD6ioxr5h9Yy3CPfyX_4v8HGASuhyJrQD/s1600/2012-12-24+00.27.02.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaoYcAn4kTqlzuS-eoHMFJLL0NDCNL7wr9JNLpzhaikro4ZwbR_Oph_SD0ThvR6hiWARUfxlFi8B_MzFufzsWJWCjC-c2jjJPG0R_X6WEJZpZhD6ioxr5h9Yy3CPfyX_4v8HGASuhyJrQD/s320/2012-12-24+00.27.02.jpg  " width="320" /></a></p>
-  </div>
-  <div class="step">
-    <p>En este punto estaremos dispuestos a catar el sabor de nuestras hallacas, las misma deben dejarse enfriar y meter a la nevera, cuando dispongamos de comer nuestras hallacas la calentamos nuevamente y a disfrutar.</p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjM3fUlezufgtt5HDU-48Xxai2WlkreGjb_11U_xQq8STfLPKMTWu15xMaDROJlUB_M3A5ZILZWVXGKNTbYR_JBXA9D5L0vGtlaog2FyXnE3GDX1hK_aRoxYS7XnHOV_28LOUcpKt_5xe0-/s1600/2012-12-24+00.27.45.jpg  "><img border="0" height="240" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjM3fUlezufgtt5HDU-48Xxai2WlkreGjb_11U_xQq8STfLPKMTWu15xMaDROJlUB_M3A5ZILZWVXGKNTbYR_JBXA9D5L0vGtlaog2FyXnE3GDX1hK_aRoxYS7XnHOV_28LOUcpKt_5xe0-/s320/2012-12-24+00.27.45.jpg  " width="320" /></a></p>
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik7_qhulUFPwgaPxhMU4Z9siKWTxkrEwIT5LUJROH47HtHBSoxfSHQuUnhNmzx6Io-kyuCjJkW9TdW8O8r_DeSwhO9PIJq0ScYevpUPM93LDenDPbZudp4SpQsT-nbVQx_juuNF4ooCj6c/s1600/2012-12-24+01.22.49.jpg  "><img border="0" height="300" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik7_qhulUFPwgaPxhMU4Z9siKWTxkrEwIT5LUJROH47HtHBSoxfSHQuUnhNmzx6Io-kyuCjJkW9TdW8O8r_DeSwhO9PIJq0ScYevpUPM93LDenDPbZudp4SpQsT-nbVQx_juuNF4ooCj6c/s400/2012-12-24+01.22.49.jpg  " width="400" /></a></p>
-  </div>
-  <p>&nbsp;</p>
-  <p><strong style="color: #1a3c66;">Al fin me he decidido a montar mi receta</strong> que estaba esperando alrededor de dos años para montarla en la web y compartir con el mundo entero la manera en la que preparo mis excelentes hallacas.  </p>
-</div>
 
 </div>
 
 <!-- WhatsApp Flotante -->
-<a href="https://wa.me/584121245521" target="_blank" class="whatsapp-btn">
-  <i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/584121245521?text=Hola%20Julio,%20vi%20tu%20receta%20de%20hallacas%20maracuchas%20y%20me%20encantó" target="_blank" class="whatsapp-float">
+  <div class="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+  <div class="whatsapp-text">
+    <span>¿Te gustó la receta?</span>
+    <small>Escríbeme por WhatsApp</small>
+  </div>
 </a>
 
-<div style="text-align: center; margin-top: 60px; padding: 20px; background: #003366; color: #ccc; font-family: Arial,sans-serif; font-size: 0.9rem; border-top: 1px solid #0055b3;">
-  <p>&copy; <span id="current-year"></span> Julio Figueroa</p>
-  <p>Preservando recuerdos personales, familiares y profesionales, Hecho con orgullo maracucho</p>
-</div>
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 
-<script>
-  document.getElementById('current-year').textContent = new Date().getFullYear();
-</script>
-<script>
-  // Menú hamburguesa
-  const navToggle = document.getElementById('nav-toggle');
-  const navMenu = document.getElementById('nav-menu');
-
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-
-  // Opcional: cerrar menú al hacer clic en un enlace
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
-    });
-  });
-</script>
 </body>
-
 </html>

@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<!DOCTYPE html>
-<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -25,360 +23,549 @@
   <meta property="og:description" content="Relato completo de mi viaje a San Carlos del Zulia con la Fundación Extreme 4x4. Ruta por la orilla del mar, médanos y faro. 29 de noviembre de 2008.">
   <meta property="og:url" content="https://juliofigu.github.io/jcf/viaje-san-carlos.html">
   <meta property="og:site_name" content="Julio Figueroa">
-  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfaVQ3992PgXuTQMNzSLgAOLUuSJxUrL42oP764KYMwoR2viJ-5EJeHpdYrugxYwoc3BKHpqjt1nXd9xdER-6T-luFKwtMLSvbqIgkD4MPm0X1UuPOA8TGzTWHO5v-cuouIJxpAYTPlP0n/s320/DCFC0020.JPG">
+  <meta property="og:image" content="imagenes/san_carlos/SC+1.jpg">
   <meta property="og:image:width" content="320">
   <meta property="og:image:height" content="240">
   <meta property="og:image:alt" content="Viaje a San Carlos del Zulia en 4x4 - Fundación Extreme 4x4">
 
   <!-- Twitter Card -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:site" content="@tu_usuario">
   <meta property="twitter:title" content="Viaje a San Carlos del Zulia - Julio Figueroa | Aventura 4x4">
   <meta property="twitter:description" content="Relato completo de mi viaje a San Carlos del Zulia con la Fundación Extreme 4x4. Ruta por la orilla del mar, médanos y faro. 29 de noviembre de 2008.">
-  <meta property="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfaVQ3992PgXuTQMNzSLgAOLUuSJxUrL42oP764KYMwoR2viJ-5EJeHpdYrugxYwoc3BKHpqjt1nXd9xdER-6T-luFKwtMLSvbqIgkD4MPm0X1UuPOA8TGzTWHO5v-cuouIJxpAYTPlP0n/s320/DCFC0020.JPG">
+  <meta property="twitter:image" content="imagenes/san_carlos/SC+1.jpg">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Estilos -->
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
-  /* Estilo general de la página */
-  body {
-    font-family: 'Roboto', sans-serif;
-    background: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
-  }
-  .container-blog {
-    max-width: 1000px;
-    margin: 80px auto 60px;
-    padding: 30px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  }
-  .container-blog h2 {
-    color: #003366;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-  }
-  /* 🔹 Ajuste: centrar todas las imágenes */
-  .container-blog img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    margin: 15px auto;     /* antes: 15px 0 → ahora centrado */
-    display: block;        /* asegura que funcione el margin auto */
-  }
-  .container-blog p, .container-blog ul, .container-blog ol {
-    font-size: 1.05rem;
-    margin-bottom: 15px;
-  }
-  .container-blog strong {
-    color: #2b00fe;
-  }
-  .container-blog a img {
-    border: none;
-  }
-  .footer-note {
-    text-align: center;
-    font-style: italic;
-    color: #2b00fe;
-    margin-top: 30px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
+    /* Estilos específicos para la página de viaje */
+    .adventure-page {
+      background: linear-gradient(135deg, #0f766e 0%, #14b8a6 50%, #a7f3d0 100%);
+      min-height: 100vh;
+      padding-top: 80px;
+    }
 
-  /* Navbar */
-  .navbar-blog {
-    background: #003366;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  .nav-blog-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 50px;
-  }
-  .nav-blog-logo {
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 5px 10px;
-    background: #0055b3;
-    border-radius: 6px;
-  }
-  .nav-blog-menu {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  .nav-blog-link {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-  }
-  .nav-blog-link:hover {
-    color: #6eceda;
-  }
+    .adventure-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      margin-bottom: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
 
-  /* WhatsApp flotante */
-  .whatsapp-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-    z-index: 1000;
-    text-decoration: none;
-  }
-  .whatsapp-btn:hover {
-    transform: scale(1.1);
-  }
+    .adventure-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #0f766e, #14b8a6, #5eead4);
+    }
 
-/* 🔹 Centrar todas las imágenes del blog */
-.container-blog img {
-  display: block;       /* ya lo tienes, asegura que funcione margin auto */
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
+    .adventure-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #e5e7eb;
+      position: relative;
+    }
 
-</style>
+    .adventure-title {
+      font-family: 'Playfair Display', serif;
+      color: #0f766e;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
 
+    .adventure-subtitle {
+      color: #6b7280;
+      font-size: 1.125rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .adventure-date {
+      display: inline-block;
+      background: linear-gradient(135deg, #0f766e, #14b8a6);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .adventure-intro {
+      font-family: 'Merriweather', serif;
+      font-size: 1.125rem;
+      color: #374151;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      text-align: justify;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+      border-radius: 0.75rem;
+      border-left: 4px solid #14b8a6;
+    }
+
+    .route-info {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 1px solid #f59e0b;
+      position: relative;
+    }
+
+    .route-info::before {
+      content: '🗺️';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .route-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .route-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 0.5rem;
+      font-weight: 500;
+      color: #92400e;
+    }
+
+    .route-item i {
+      color: #f59e0b;
+      font-size: 1.25rem;
+    }
+
+    .adventure-section {
+      margin: 3rem 0;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      color: #dc2626;
+      font-size: 1.875rem;
+      font-weight: 600;
+      margin: 2rem 0 1.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, #dc2626, #f59e0b);
+      border-radius: 2px;
+    }
+
+    .adventure-text {
+      font-size: 1.05rem;
+      color: #374151;
+      line-height: 1.7;
+      margin: 1.5rem 0;
+      text-align: justify;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .photo-item {
+      background: white;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      border: 1px solid #e5e7eb;
+    }
+
+    .photo-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .photo-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .photo-caption {
+      padding: 1rem;
+      font-style: italic;
+      color: #6b7280;
+      font-size: 0.875rem;
+      text-align: center;
+      background: #f8fafc;
+    }
+
+    .highlight-moment {
+      background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid #8b5cf6;
+      position: relative;
+    }
+
+    .highlight-moment::before {
+      content: '⭐';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .team-info {
+      background: linear-gradient(135deg, #fecaca 0%, #fca5a5 100%);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid #ef4444;
+      position: relative;
+    }
+
+    .team-info::before {
+      content: '👥';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .large-photo {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .large-photo img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .large-photo img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .adventure-container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+      
+      .adventure-title {
+        font-size: 2rem;
+      }
+      
+      .photo-gallery {
+        grid-template-columns: 1fr;
+      }
+      
+      .route-details {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .share-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: #f8fafc;
+      border-radius: 0.5rem;
+    }
+
+    .share-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      color: white;
+    }
+
+    .share-btn.facebook { background: #1877f2; }
+    .share-btn.twitter { background: #1da1f2; }
+    .share-btn.whatsapp { background: #25d366; }
+
+  </style>
 </head>
-<body>
+<body class="adventure-page">
 
-<!--Navbar fijo - Versión responsive para móviles-->
-<!--Navbar fijo -versiónresponsive paramóviles-->
-<!-- Navbar Responsive con Menú Hamburguesa -->
+<!-- Navbar -->
 <nav class="navbar">
   <div class="nav-container">
-    <!-- Logo / Inicio -->
-    <a href="index.html" class="nav-logo">Inicio</a>
+    <a href="index.html" class="nav-logo">
+      <i class="fas fa-home"></i> Inicio
+    </a>
 
-    <!-- Botón Hamburguesa -->
     <button class="nav-toggle" id="nav-toggle">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <!-- Menú de Navegación -->
     <ul class="nav-menu" id="nav-menu">
       <li><a href="hallacas.html" class="nav-link">Hallacas Maracuchas</a></li>
       <li><a href="aga-gas.html" class="nav-link">Recuerdo AGA GAS</a></li>
       <li><a href="puertos-4x4.html" class="nav-link">Los Puertos 4x4</a></li>
+      <li><a href="https://juliofigu.blogspot.com" target="_blank" class="nav-link">
+        <i class="fas fa-blog"></i> Blog Completo
+      </a></li>
     </ul>
   </div>
 </nav>
 
-  <!-- Contenido completo del blog -->
-  <div class="container-blog">
-    <h2>Viaje a San Carlos</h2>
+<!-- Breadcrumb -->
+<div class="container">
+  <div class="breadcrumb" data-aos="fade-down">
+    <a href="index.html">Inicio</a>
+    <span>></span>
+    <span>Viaje a San Carlos</span>
+  </div>
+</div>
 
-    <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfaVQ3992PgXuTQMNzSLgAOLUuSJxUrL42oP764KYMwoR2viJ-5EJeHpdYrugxYwoc3BKHpqjt1nXd9xdER-6T-luFKwtMLSvbqIgkD4MPm0X1UuPOA8TGzTWHO5v-cuouIJxpAYTPlP0n/s1600-h/DCFC0020.JPG">
-      <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 240px; height: 320px;" 
-           src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfaVQ3992PgXuTQMNzSLgAOLUuSJxUrL42oP764KYMwoR2viJ-5EJeHpdYrugxYwoc3BKHpqjt1nXd9xdER-6T-luFKwtMLSvbqIgkD4MPm0X1UuPOA8TGzTWHO5v-cuouIJxpAYTPlP0n/s320/DCFC0020.JPG" 
-           alt="" 
-           id="BLOGGER_PHOTO_ID_5274986229585205010" 
-           border="0" />
-    </a>
+<!-- Contenido Principal -->
+<div class="adventure-container" data-aos="fade-up">
+  
+  <!-- Header -->
+  <div class="adventure-header">
+    <h1 class="adventure-title">VIAJE A SAN CARLOS DEL ZULIA</h1>
+    <p class="adventure-subtitle">Aventura 4x4 con la Fundación Extreme 4x4</p>
+    <div class="adventure-date">29 de Noviembre de 2008</div>
+  </div>
 
-    <br />
+  <!-- Introducción -->
+  <div class="adventure-intro" data-aos="fade-up">
+    El sábado 29 de noviembre de 2008 tuve la oportunidad de participar en una emocionante aventura 4x4 hacia San Carlos del Zulia, organizada por la Fundación Extreme 4x4. Esta experiencia me permitió conocer paisajes únicos de nuestra región, desde la orilla del mar hasta los impresionantes médanos, culminando en el histórico faro de San Carlos.
+  </div>
 
-    <div style="text-align: justify;">
-      <span class="italic-blue">Sabado 29/11/2008.</span><br /><br />
-      <span class="italic-blue">5:30 am, Listo. En Espera de que me pasen buscando para lo que promete ser una gran Aventura.</span>  
-      <span class="italic-blue"><br /><br />6:30 am, Todos Juntos en la Caravana, desde el Punto de Partida, en este viaje fue, al Frente de la Bomba los Luzardo.</span>
-      <br /><br />
-      <span class="blue-text">7:45 am, a esta hora estamos pasando al Frente de la Plaza de Toro de Maracaibo, llevamos mucho entusiasmo y deseos de llegar pronto a nuestro destino final.</span>
-      <br /><br />
-      <span class="blue-text">8:45 am, Llegamos a la orilla de la playa, comenzaremos un recorrido de 30 km, para llegar a San Carlos.</span>
-      <br />
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqQNvszD3MFgXiot5nN86m1ORem1TSwHBw2Pd_lH_5tA5f9z8uQKw3tgKailKRv7fGB23P0HXbv2o6HhjHfcg7sEwXuZhR16Yv4Dt-tGalAd0SfSzw86y4QpDSwAOU82E_MT2RzPJ_Htcw/s1600-h/DCFC0012.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 240px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqQNvszD3MFgXiot5nN86m1ORem1TSwHBw2Pd_lH_5tA5f9z8uQKw3tgKailKRv7fGB23P0HXbv2o6HhjHfcg7sEwXuZhR16Yv4Dt-tGalAd0SfSzw86y4QpDSwAOU82E_MT2RzPJ_Htcw/s320/DCFC0012.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5274990003272228738" 
-             border="0" />
-      </a>
-
-      <br />
-
-      <div style="text-align: justify;">
-        <span class="blue-text">10:15 am,</span> 
-        <span class="blue-text">Llegada a la Isla de San Carlos, a disfrutar del sol y la playa.</span>
-        <br /><br />
-
-        <div class="centered" style="color: red; font-family: 'Trebuchet MS';">
-          Lo malo no poder visitar el castillo, estaba cerrado por remodelación.
-        </div>
-
-        <br />
-
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOuZH_CzXP30zQKJPNoOjitCbAklgrrb6HSUEu4WHxCF_g1fVnPPlEvfhaV4kRpRKIjqth_VTx0zEPymQrOF4UTSVBx8sk1CPCLIpM0tSokbXSlNa5ftMkVSBuSTNsVtyE6ar8HoAsw1NK/s1600-h/DCFC0022.JPG">
-          <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 240px;" 
-               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOuZH_CzXP30zQKJPNoOjitCbAklgrrb6HSUEu4WHxCF_g1fVnPPlEvfhaV4kRpRKIjqth_VTx0zEPymQrOF4UTSVBx8sk1CPCLIpM0tSokbXSlNa5ftMkVSBuSTNsVtyE6ar8HoAsw1NK/s320/DCFC0022.JPG" 
-               alt="" 
-               id="BLOGGER_PHOTO_ID_5274993181734848194" 
-               border="0" />
-        </a>
-
-        <br />
-
-        <div style="text-align: center; font-family: Georgia, 'Times New Roman', serif; color: #3366ff;">
-          Disfruten de muchas fotografías tomadas en este divertido recorrido por los médanos en San Carlos, que poco tienen que envidiarle a los Médanos de Coro...!!
-          <br /><br /><br />
-        </div>
-
-        <div class="centered">
-          <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrDocZGYr43N8WViOUiJc0w7Oq6KmYByzp-Ge6YOwct1akOnsfMaf9cl3VcdtzN8bYuuBL8rlJE2Qsv9lI3V-CW2UvVnp1ZrIymymsZ69J_hzlTbU02M8XTNBCq6JyP2osf3LX2lH-J_oo/s1600-h/DCFC0005.JPG">
-            <img style="margin: 0pt 10px 10px 0pt; cursor: pointer; width: 374px; height: 240px;" 
-                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrDocZGYr43N8WViOUiJc0w7Oq6KmYByzp-Ge6YOwct1akOnsfMaf9cl3VcdtzN8bYuuBL8rlJE2Qsv9lI3V-CW2UvVnp1ZrIymymsZ69J_hzlTbU02M8XTNBCq6JyP2osf3LX2lH-J_oo/s320/DCFC0005.JPG" 
-                 alt="" 
-                 id="BLOGGER_PHOTO_ID_5275010257939871554" 
-                 border="0" />
-          </a><br />
-          Justo antes de cruzar el Puente del Rio Limon.<br /><br /><br />
-        </div>
-
-        <div class="centered">
-          <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTucQjcze0w8heoMi28c5_XKpx5KYHmiC5bruo-Ps5L9Fy_cFE3GD0riD5Aa2w5RX29jykGSoId5crCmdaQYGA-haLDwfnj6X6Yq52H6nkX8g0SeIxFtZBmOqJ5J_RxpWftiNdATZXSVV_/s1600-h/DCFC0017.JPG">
-            <img style="margin: 0pt 10px 10px 0pt; cursor: pointer; width: 372px; height: 240px;" 
-                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTucQjcze0w8heoMi28c5_XKpx5KYHmiC5bruo-Ps5L9Fy_cFE3GD0riD5Aa2w5RX29jykGSoId5crCmdaQYGA-haLDwfnj6X6Yq52H6nkX8g0SeIxFtZBmOqJ5J_RxpWftiNdATZXSVV_/s320/DCFC0017.JPG" 
-                 alt="" 
-                 id="BLOGGER_PHOTO_ID_5275010683287941858" 
-                 border="0" />
-          </a><br />
-          En el propio San Carlos, este es un Restaurant que nos llamó mucho la atención, muy bonito.<br /><br /><br />
-        </div>
-
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2s4Ekfmrf96eOQiWhc-p7fnURBx0RCEd_6_8rLv_vrS7YZg8N0jfRoSQDXnKaxsZsr5GSTOw3tGZrTlj_5GWIoHmhA81nV6QTCgrQoSwZGScEuTJhDl0783YWhDHemqWxDbvol-L0zSUD/s1600-h/DCFC0033.JPG">
-          <img style="margin: 0pt 0pt 10px 10px; cursor: pointer; width: 320px; height: 240px;" 
-               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2s4Ekfmrf96eOQiWhc-p7fnURBx0RCEd_6_8rLv_vrS7YZg8N0jfRoSQDXnKaxsZsr5GSTOw3tGZrTlj_5GWIoHmhA81nV6QTCgrQoSwZGScEuTJhDl0783YWhDHemqWxDbvol-L0zSUD/s320/DCFC0033.JPG" 
-               alt="" 
-               id="BLOGGER_PHOTO_ID_5275012628770762722" 
-               border="0" />
-        </a><br />
-        Saludos desde el Faro, en la Isla de San Carlos.<br /><br /><br />
-
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpgZYnTkM3WH2icML9KWZ7r9sURylbPcIv8Z2dRndptDgR5f5b_ONj04Gqd07iGVnMrS1SI_Zis55H7LBBpt-zsPMvzBx6u3VJNVFuInSvil2GJRGdhD2BIQzhZxTA1E_TStb4DG9CfffY/s1600-h/DCFC0035.JPG">
-          <img style="margin: 0pt 0pt 10px 10px; cursor: pointer; width: 320px; height: 240px;" 
-               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpgZYnTkM3WH2icML9KWZ7r9sURylbPcIv8Z2dRndptDgR5f5b_ONj04Gqd07iGVnMrS1SI_Zis55H7LBBpt-zsPMvzBx6u3VJNVFuInSvil2GJRGdhD2BIQzhZxTA1E_TStb4DG9CfffY/s320/DCFC0035.JPG" 
-               alt="" 
-               id="BLOGGER_PHOTO_ID_5275013052569424178" 
-               border="0" />
-        </a><br />
-        Melvis Garcia, en su Hilux... devoró todos los médanos que se le atravesaron en el camino.<br /><br /><br />
-
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaPKLV7yc-OCSF_GbNOmBW64-eNotvFKFi1jn3Vn_wMTCHJs2XNETvsW7QJVkME-AI36Fv5MixEb47KFwKlJmJIhmPpP3N4iQtbDJrX1WAl904p_F5E-1Tl1Nh8tJMysA-BS8PgUk_5CzB/s1600-h/DCFC0041.JPG">
-          <img style="margin: 0pt 10px 10px 0pt; cursor: pointer; width: 320px; height: 240px;" 
-               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaPKLV7yc-OCSF_GbNOmBW64-eNotvFKFi1jn3Vn_wMTCHJs2XNETvsW7QJVkME-AI36Fv5MixEb47KFwKlJmJIhmPpP3N4iQtbDJrX1WAl904p_F5E-1Tl1Nh8tJMysA-BS8PgUk_5CzB/s320/DCFC0041.JPG" 
-               alt="" 
-               id="BLOGGER_PHOTO_ID_5275013855960714754" 
-               border="0" />
-        </a><br />
-        Saludossssssss... a los Puertos de Altagracia..<br /><br /><br />
-
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl70vP9my1vzt0W4fBnj93RZSQwiYGvpu1MU4Pf6bqhyHI4O0jlFyR1AjCOAnMpBJzxl8RdS0MfARZ20AVPYdkIReEdiSAwoIlxrKCeWCdG7XOTNPPT8EbGMhukpsbZhn3OJMTMtwtYIC8/s1600-h/DCFC0047.JPG">
-          <img style="margin: 0pt 10px 10px 0pt; cursor: pointer; width: 320px; height: 240px;" 
-               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl70vP9my1vzt0W4fBnj93RZSQwiYGvpu1MU4Pf6bqhyHI4O0jlFyR1AjCOAnMpBJzxl8RdS0MfARZ20AVPYdkIReEdiSAwoIlxrKCeWCdG7XOTNPPT8EbGMhukpsbZhn3OJMTMtwtYIC8/s320/DCFC0047.JPG" 
-               alt="" 
-               id="BLOGGER_PHOTO_ID_5275014363638450002" 
-               border="0" />
-        </a><br />
-        Hermosa Vista, hacia el Mar Caribe.<br /><br /><br />
-
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2rBS2GQmW87cQgpPO_vSZOIgey8I0PxGv-euBAiLpUr7gRBq0z6PCQqh-7PCLwdDr4YJdj79LsP2pn3yvJRC6vbfZr5cRP_X509hh8jvB-AMg5r0eUp3MKXBh3KKV9GLaiq1CGYNRyBUC/s1600-h/DCFC0050.JPG">
-          <img style="margin: 0pt 0pt 10px 10px; cursor: pointer; width: 320px; height: 240px;" 
-               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2rBS2GQmW87cQgpPO_vSZOIgey8I0PxGv-euBAiLpUr7gRBq0z6PCQqh-7PCLwdDr4YJdj79LsP2pn3yvJRC6vbfZr5cRP_X509hh8jvB-AMg5r0eUp3MKXBh3KKV9GLaiq1CGYNRyBUC/s320/DCFC0050.JPG" 
-               alt="" 
-               id="BLOGGER_PHOTO_ID_5275015142049200978" 
-               border="0" />
-        </a><br /><br />
-
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5Zn67QjhhnxMYfzpAXI9b7YDqyRS4w7Yg-d69jwWnlfWjTs9F1UYlwtV-flXDt1RKpXpFroGiagULuF33mQYhnkBRugyrVSv5ChcJ9wBpCd7WoxguS0wLZp6rXHRIdfEfxTNdRF3iz3sj/s1600-h/DCFC0031.JPG">
-          <img style="margin: 0pt 0pt 10px 10px; cursor: pointer; width: 320px; height: 240px;" 
-               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5Zn67QjhhnxMYfzpAXI9b7YDqyRS4w7Yg-d69jwWnlfWjTs9F1UYlwtV-flXDt1RKpXpFroGiagULuF33mQYhnkBRugyrVSv5ChcJ9wBpCd7WoxguS0wLZp6rXHRIdfEfxTNdRF3iz3sj/s320/DCFC0031.JPG" 
-               alt="" 
-               id="BLOGGER_PHOTO_ID_5275018063441406434" 
-               border="0" />
-        </a><br /><br />
-
-        <div class="right-aligned">
-          <div style="text-align: center;">
-            <span style="font-size:100%;">Esta Publicidad Política, nos causó un verdadero ataque de risas.<br /></span>
-          </div>
-          <div style="text-align: center;">
-            <span style="font-size:100%;">SIN PALABRAS....<br /></span>
-          </div>
-        </div>
-
-        <br />
-
-        <div style="text-align: justify;">
-          <span style="font-family: 'Trebuchet MS';">Espero más fotos de esta Maravillosa Aventura... espero la colaboración de los aventureros de la Fundación Extreme 4x4</span><br /><br />
-          <span style="font-family: 'Trebuchet MS';">Muy pronto colgaremos los videos de esta aventura EXTREME.. están buenísimos..</span><br />
-        </div>
+  <!-- Información de la Ruta -->
+  <div class="route-info" data-aos="fade-up">
+    <h3 style="color: #92400e; margin-bottom: 1rem; font-weight: 600;">Detalles de la Expedición</h3>
+    <div class="route-details">
+      <div class="route-item">
+        <i class="fas fa-calendar-alt"></i>
+        <span>29 de Noviembre 2008</span>
+      </div>
+      <div class="route-item">
+        <i class="fas fa-users"></i>
+        <span>Fundación Extreme 4x4</span>
+      </div>
+      <div class="route-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>San Carlos del Zulia</span>
+      </div>
+      <div class="route-item">
+        <i class="fas fa-car"></i>
+        <span>Vehículos 4x4</span>
+      </div>
+      <div class="route-item">
+        <i class="fas fa-route"></i>
+        <span>Orilla del mar y médanos</span>
+      </div>
+      <div class="route-item">
+        <i class="fas fa-lighthouse"></i>
+        <span>Faro histórico</span>
       </div>
     </div>
   </div>
 
-  <!-- WhatsApp Flotante -->
-  <a href="https://wa.me/584121245521" target="_blank" class="whatsapp-btn">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <div style="text-align: center; margin-top: 60px; padding: 20px;background: #003366;color: #ccc;font-family: Arial,sans-serif;font-size: 0.9rem;border-top: 1px solid #0055b3;">
-  <p>&copy; <span id="current-year"></span> Julio Figueroa</p>
-  <p>Preservando recuerdos personales, familiares y profesionales, Hecho con orgullo maracucho</p>
+  <!-- Galería Principal -->
+  <div class="adventure-section">
+    <h2 class="section-title" data-aos="fade-up">La Aventura en Imágenes</h2>
+    
+    <div class="large-photo" data-aos="zoom-in">
+      <img src="imagenes/san_carlos/SC+1.jpg" alt="Grupo de aventureros en San Carlos">
+    </div>
+
+    <div class="adventure-text" data-aos="fade-up">
+      La expedición comenzó temprano en la mañana, con un grupo entusiasta de aventureros equipados con vehículos 4x4 preparados para enfrentar los desafíos del terreno. La ruta nos llevó por caminos poco transitados, donde pudimos apreciar la belleza natural de la península de San Carlos.
+    </div>
+  </div>
+
+  <!-- Experiencia del Viaje -->
+  <div class="adventure-section">
+    <h2 class="section-title" data-aos="fade-up">La Experiencia</h2>
+    
+    <div class="team-info" data-aos="fade-up">
+      <h4 style="color: #dc2626; margin-bottom: 1rem;">Fundación Extreme 4x4</h4>
+      <p class="adventure-text">
+        La Fundación Extreme 4x4 se caracteriza por organizar expediciones responsables que combinan la aventura con el respeto por el medio ambiente y la promoción del turismo local. Este viaje a San Carlos fue una muestra perfecta de su filosofía: explorar, disfrutar y preservar.
+      </p>
+    </div>
+
+    <div class="adventure-text" data-aos="fade-up">
+      Durante el recorrido, tuvimos la oportunidad de transitar por la orilla del mar, sintiendo la brisa marina y observando el contraste entre el azul del Golfo de Venezuela y la arena dorada de la costa. Los médanos de San Carlos ofrecieron un espectáculo natural impresionante, con formaciones de arena que cambian constantemente por la acción del viento.
+    </div>
+
+    <div class="highlight-moment" data-aos="fade-up">
+      <h4 style="color: #7c3aed; margin-bottom: 1rem;">Momento Destacado</h4>
+      <p class="adventure-text">
+        El punto culminante del viaje fue llegar al faro de San Carlos, una estructura histórica que ha servido como guía para los navegantes durante décadas. Desde allí, pudimos contemplar una vista panorámica espectacular del Golfo de Venezuela y comprender la importancia estratégica de esta ubicación.
+      </p>
+    </div>
+
+    <!-- Galería de Equipos -->
+  <div class="memory-section">
+    <div class="photo-gallery">
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="imagenes/san_carlos/SC+3.jpg" alt="Paisaje de San Carlos">
+        <div class="photo-caption">Paisajes únicos de la península de San Carlos</div>
+      </div>
+      
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="imagenes/san_carlos/SC+2.jpg" alt="Vehículos 4x4 en la aventura">
+        <div class="photo-caption">Los vehículos 4x4 enfrentando el terreno desafiante</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/san_carlos/SC+4.jpg" alt="Vehículos 4x4 en la aventura">
+        <div class="photo-caption">Justo antes de cruzar el Puente del Rio Limon.</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="400">
+        <img src="imagenes/san_carlos/SC+5.jpg" alt="Vehículos 4x4 en la aventura">
+        <div class="photo-caption">En el propio San Carlos, este es un Restaurant que nos llamó mucho la atención, muy bonito.</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="500">
+        <img src="imagenes/san_carlos/SC+6.jpg" alt="Vehículos 4x4 en la aventura">
+        <div class="photo-caption">Saludos desde el Faro, en la Isla de San Carlos.</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="600">
+        <img src="imagenes/san_carlos/SC+7.jpg" alt="Vehículos 4x4 en la aventura">
+        <div class="photo-caption">Melvis Garcia, en su Hilux... devoró todos los médanos que se le atravesaron en el camino.</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="700">
+        <img src="imagenes/san_carlos/SC+8.jpg" alt="Vehículos 4x4 en la aventura">
+        <div class="photo-caption">Saludossssssss... a los Puertos de Altagracia..</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="800">
+        <img src="imagenes/san_carlos/SC+9.jpg" alt="Vehículos 4x4 en la aventura">
+        <div class="photo-caption">Hermosa Vista, hacia el Mar Caribe.</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="900">
+        <img src="imagenes/san_carlos/SC+10.jpg" alt="Vehículos 4x4 en la aventura">
+        <div class="photo-caption">Hermosa Vista, hacia el Mar Caribe.</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="1000">
+        <img src="imagenes/san_carlos/SC+11.jpg" alt="Vehículos 4x4 en la aventura">
+        <div class="photo-caption">Esta Publicidad Política, nos causó un verdadero ataque de risas. SIN PALABRAS....</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Reflexión -->
+  <div class="adventure-section">
+    <h2 class="section-title" data-aos="fade-up">Reflexiones del Viaje</h2>
+    
+    <div class="adventure-text" data-aos="fade-up">
+      Esta experiencia con la Fundación Extreme 4x4 me permitió redescubrir la belleza natural de nuestra región zuliana. San Carlos del Zulia no es solo un destino turístico, sino un lugar lleno de historia, naturaleza y paisajes que nos recuerdan la riqueza geográfica de Venezuela.
+    </div>
+
+    <div class="adventure-text" data-aos="fade-up">
+      El viaje también fue una oportunidad para compartir con otros entusiastas del 4x4, intercambiar experiencias y crear nuevas amistades unidas por la pasión por la aventura y el respeto por la naturaleza. La organización impecable de la Fundación Extreme 4x4 hizo que cada momento fuera memorable y seguro.
+    </div>
+  </div>
+
+  <!-- Botones de Compartir -->
+  <div class="share-buttons" data-aos="fade-up">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://juliofigu.github.io/jcf/viaje-san-carlos.html" target="_blank" class="share-btn facebook">
+      <i class="fab fa-facebook-f"></i> Compartir
+    </a>
+    <a href="https://twitter.com/intent/tweet?url=https://juliofigu.github.io/jcf/viaje-san-carlos.html&text=Viaje a San Carlos del Zulia por Julio Figueroa" target="_blank" class="share-btn twitter">
+      <i class="fab fa-twitter"></i> Tweetear
+    </a>
+    <a href="https://wa.me/?text=Mira este viaje a San Carlos del Zulia: https://juliofigu.github.io/jcf/viaje-san-carlos.html" target="_blank" class="share-btn whatsapp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+
+  <!-- Nota Final -->
+  <div class="footer-note" data-aos="fade-up">
+    "Las aventuras nos enseñan que los mejores tesoros no son destinos, sino los momentos y las personas que encontramos en el camino."
+    <br><br>
+    <strong>- Julio Figueroa, explorando las maravillas del Zulia 🇻🇪</strong>
+  </div>
+
 </div>
 
-<script>
-  document.getElementById('current-year').textContent = new Date().getFullYear();
-</script>
-<script>
-  // Menú hamburguesa
-  const navToggle = document.getElementById('nav-toggle');
-  const navMenu = document.getElementById('nav-menu');
+<!-- WhatsApp Flotante -->
+<a href="https://wa.me/584121245521?text=Hola%20Julio,%20vi%20tu%20viaje%20a%20San%20Carlos%20y%20me%20encantó" target="_blank" class="whatsapp-float">
+  <div class="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+  <div class="whatsapp-text">
+    <span>¿Te gustó la aventura?</span>
+    <small>Escríbeme por WhatsApp</small>
+  </div>
+</a>
 
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 
-  // Cerrar menú al hacer clic en un enlace
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
-    });
-  });
-</script>
 </body>
 </html>

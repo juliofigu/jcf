@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<!DOCTYPE html>
-<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -25,370 +23,597 @@
   <meta property="og:description" content="Fotografías y recuerdos del Club Los Puertos 4x4, del cual fui fundador. Aventuras Off Road desde Maracaibo hasta San Carlos del Zulia. 2003.">
   <meta property="og:url" content="https://juliofigu.github.io/jcf/puertos-4x4.html">
   <meta property="og:site_name" content="Julio Figueroa">
-  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeveLCywCYu_YSv1xl_xBXoWcn2-M2HlRUsmxfPV5L1H02LGzaeJF9AaczTmvyyKSNtGFJa3yMk2Pckn4kCIP6IFbaBxIDLWtDIC36G7m1WiEIZNF2Tb4uImUGQ2dAXp6dJ9CKoaShw0oa/s320/SC+1.JPG">
+  <meta property="og:image" content="imagenes/puertos_4x4/LP+1.jpg">
   <meta property="og:image:width" content="320">
   <meta property="og:image:height" content="212">
   <meta property="og:image:alt" content="Club Los Puertos 4x4 en ruta hacia San Carlos del Zulia - Año 2003">
 
   <!-- Twitter Card -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:site" content="@tu_usuario">
   <meta property="twitter:title" content="Recuerdo del Club Los Puertos 4x4 - Julio Figueroa">
   <meta property="twitter:description" content="Fotografías y recuerdos del Club Los Puertos 4x4, del cual fui fundador. Aventuras Off Road desde Maracaibo hasta San Carlos del Zulia. 2003.">
-  <meta property="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeveLCywCYu_YSv1xl_xBXoWcn2-M2HlRUsmxfPV5L1H02LGzaeJF9AaczTmvyyKSNtGFJa3yMk2Pckn4kCIP6IFbaBxIDLWtDIC36G7m1WiEIZNF2Tb4uImUGQ2dAXp6dJ9CKoaShw0oa/s320/SC+1.JPG">
+  <meta property="twitter:image" content="imagenes/puertos_4x4/LP+1.jpg">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Estilos -->
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
-  /* Estilo general de la página */
-  body {
-    font-family: 'Roboto', sans-serif;
-    background: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
-  }
-  .container-blog {
-    max-width: 1000px;
-    margin: 80px auto 60px;
-    padding: 30px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  }
-  .container-blog h2 {
-    color: #003366;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-  }
-  /* 🔹 Ajuste: centrar todas las imágenes */
-  .container-blog img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    margin: 15px auto;     /* antes: 15px 0 → ahora centrado */
-    display: block;        /* asegura que funcione el margin auto */
-  }
-  .container-blog p, .container-blog ul, .container-blog ol {
-    font-size: 1.05rem;
-    margin-bottom: 15px;
-  }
-  .container-blog strong {
-    color: #2b00fe;
-  }
-  .container-blog a img {
-    border: none;
-  }
-  .footer-note {
-    text-align: center;
-    font-style: italic;
-    color: #2b00fe;
-    margin-top: 30px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
+    /* Estilos específicos para la página del club 4x4 */
+    .club-page {
+      background: linear-gradient(135deg, #7c2d12 0%, #ea580c 50%, #fed7aa 100%);
+      min-height: 100vh;
+      padding-top: 80px;
+    }
 
-  /* Navbar */
-  .navbar-blog {
-    background: #003366;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  .nav-blog-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 50px;
-  }
-  .nav-blog-logo {
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 5px 10px;
-    background: #0055b3;
-    border-radius: 6px;
-  }
-  .nav-blog-menu {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  .nav-blog-link {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-  }
-  .nav-blog-link:hover {
-    color: #6eceda;
-  }
+    .club-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      margin-bottom: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
 
-  /* WhatsApp flotante */
-  .whatsapp-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background: #25D366;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-    z-index: 1000;
-    text-decoration: none;
-  }
-  .whatsapp-btn:hover {
-    transform: scale(1.1);
-  }
-</style>
+    .club-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #7c2d12, #ea580c, #fb923c);
+    }
 
+    .club-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #e5e7eb;
+      position: relative;
+    }
+
+    .club-title {
+      font-family: 'Playfair Display', serif;
+      color: #7c2d12;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .club-subtitle {
+      color: #6b7280;
+      font-size: 1.125rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .club-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #7c2d12, #ea580c);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .founder-info {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 1px solid #f59e0b;
+      position: relative;
+    }
+
+    .founder-info::before {
+      content: '🏆';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .club-intro {
+      font-family: 'Merriweather', serif;
+      font-size: 1.125rem;
+      color: #374151;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      text-align: justify;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+      border-radius: 0.75rem;
+      border-left: 4px solid #ef4444;
+    }
+
+    .club-section {
+      margin: 3rem 0;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      color: #dc2626;
+      font-size: 1.875rem;
+      font-weight: 600;
+      margin: 2rem 0 1.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, #dc2626, #f59e0b);
+      border-radius: 2px;
+    }
+
+    .club-text {
+      font-size: 1.05rem;
+      color: #374151;
+      line-height: 1.7;
+      margin: 1.5rem 0;
+      text-align: justify;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .photo-item {
+      background: white;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      border: 1px solid #e5e7eb;
+    }
+
+    .photo-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .photo-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .photo-caption {
+      padding: 1rem;
+      font-style: italic;
+      color: #6b7280;
+      font-size: 0.875rem;
+      text-align: center;
+      background: #f8fafc;
+    }
+
+    .adventure-highlight {
+      background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid #8b5cf6;
+      position: relative;
+    }
+
+    .adventure-highlight::before {
+      content: '🚗';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .club-values {
+      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid #10b981;
+      position: relative;
+    }
+
+    .club-values::before {
+      content: '🌟';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .values-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    .values-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+      color: #065f46;
+      font-weight: 500;
+    }
+
+    .values-list li::before {
+      content: '✓';
+      background: #10b981;
+      color: white;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+
+    .large-photo {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .large-photo img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .large-photo img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+    }
+
+    .legacy-box {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid #f59e0b;
+      position: relative;
+    }
+
+    .legacy-box::before {
+      content: '📜';
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: white;
+      padding: 0 10px;
+      font-size: 1.5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .club-container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+      
+      .club-title {
+        font-size: 2rem;
+      }
+      
+      .photo-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .share-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: #f8fafc;
+      border-radius: 0.5rem;
+    }
+
+    .share-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      color: white;
+    }
+
+    .share-btn.facebook { background: #1877f2; }
+    .share-btn.twitter { background: #1da1f2; }
+    .share-btn.whatsapp { background: #25d366; }
+
+  </style>
 </head>
-<body>
+<body class="club-page">
 
-  <!-- Navbar -->
-<!--Navbar fijo -versiónresponsive paramóviles-->
-<!--Navbar fijo -versiónresponsive paramóviles-->
-<!-- Navbar Responsive con Menú Hamburguesa -->
+<!-- Navbar -->
 <nav class="navbar">
   <div class="nav-container">
-    <!-- Logo / Inicio -->
-    <a href="index.html" class="nav-logo">Inicio</a>
+    <a href="index.html" class="nav-logo">
+      <i class="fas fa-home"></i> Inicio
+    </a>
 
-    <!-- Botón Hamburguesa -->
     <button class="nav-toggle" id="nav-toggle">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <!-- Menú de Navegación -->
     <ul class="nav-menu" id="nav-menu">
       <li><a href="hallacas.html" class="nav-link">Hallacas Maracuchas</a></li>
       <li><a href="aga-gas.html" class="nav-link">Recuerdo AGA GAS</a></li>
       <li><a href="viaje-san-carlos.html" class="nav-link">Viaje a San Carlos</a></li>
-      </ul>
+      <li><a href="https://juliofigu.blogspot.com" target="_blank" class="nav-link">
+        <i class="fas fa-blog"></i> Blog Completo
+      </a></li>
+    </ul>
   </div>
 </nav>
 
-  <!-- Contenido completo del blog -->
-  <div class="container-blog">
-    <h2>Los Puertos 4x4</h2>
+<!-- Breadcrumb -->
+<div class="container">
+  <div class="breadcrumb" data-aos="fade-down">
+    <a href="index.html">Inicio</a>
+    <span>></span>
+    <span>Club Los Puertos 4x4</span>
+  </div>
+</div>
 
-    <div class="centered">
-      <span class="blue-bold">Fotografías del Recuerdo</span><br /><br />
-      <span class="blue-text">Aventura del Club Los Puertos 4x4</span>, 
-      <span class="blue-text">del cual este servidor fue uno de los fundadores</span>.<br />
-      <span class="blue-text">En el presente, este Club 4x4, está extinto o desaparecido.</span><br /><br />
-      <span class="blue-text">Los entusiastas de las aventuras Off Road 4x4, ahora pertenecemos a la</span><br /><br />
-      <span class="red-bold">FUNDACIÓN EXTREME 4X4</span>
+<!-- Contenido Principal -->
+<div class="club-container" data-aos="fade-up">
+  
+  <!-- Header -->
+  <div class="club-header">
+    <h1 class="club-title">CLUB LOS PUERTOS 4X4</h1>
+    <p class="club-subtitle">Aventuras Off Road desde Maracaibo hasta San Carlos del Zulia</p>
+    <div class="club-badge">Fundador - Año 2003</div>
+  </div>
+
+  <!-- Información del Fundador -->
+  <div class="founder-info" data-aos="fade-up">
+    <h3 style="color: #92400e; margin-bottom: 1rem; font-weight: 600;">Miembro Fundador</h3>
+    <p class="club-text">
+      Con gran orgullo recuerdo mi participación como miembro fundador del Club Los Puertos 4x4 en el año 2003. Esta iniciativa nació de la pasión compartida por las aventuras off-road y el deseo de explorar los paisajes únicos de nuestra región zuliana de manera responsable y organizada.
+    </p>
+  </div>
+
+  <!-- Introducción -->
+  <div class="club-intro" data-aos="fade-up">
+    El Club Los Puertos 4x4 se estableció como una organización dedicada a promover el turismo de aventura en la región del Zulia, específicamente en las rutas que conectan Maracaibo con San Carlos del Zulia. Nuestro objetivo principal era crear un espacio para los entusiastas de los vehículos todo terreno, donde pudiéramos compartir experiencias, conocimientos técnicos y, sobre todo, disfrutar de la naturaleza de manera responsable.
+  </div>
+
+  <!-- Galería Principal -->
+  <div class="club-section">
+    <h2 class="section-title" data-aos="fade-up">Nuestras Aventuras</h2>
+    
+    <div class="large-photo" data-aos="zoom-in">
+      <img src="imagenes/puertos_4x4/LP+1.jpg" alt="Club Los Puertos 4x4 en San Carlos">
     </div>
 
-    <br />
-
-    <div class="centered">
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeveLCywCYu_YSv1xl_xBXoWcn2-M2HlRUsmxfPV5L1H02LGzaeJF9AaczTmvyyKSNtGFJa3yMk2Pckn4kCIP6IFbaBxIDLWtDIC36G7m1WiEIZNF2Tb4uImUGQ2dAXp6dJ9CKoaShw0oa/s1600-h/SC+1.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 212px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeveLCywCYu_YSv1xl_xBXoWcn2-M2HlRUsmxfPV5L1H02LGzaeJF9AaczTmvyyKSNtGFJa3yMk2Pckn4kCIP6IFbaBxIDLWtDIC36G7m1WiEIZNF2Tb4uImUGQ2dAXp6dJ9CKoaShw0oa/s320/SC+1.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276129985719135858" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6zklHFOmnLRCLSHmm58bIl6-vfHpr-PgmHVZLJeC569mu-yo2vpC5KWkkIf6NnAhVL7zPIK58RpO39F4JOVBadyXv-ilG_KUjeHr9n39nJu1ICFJvpzlBeLNVNuVK1Cad1_q5eo6kUoes/s1600-h/SC+2.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 202px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6zklHFOmnLRCLSHmm58bIl6-vfHpr-PgmHVZLJeC569mu-yo2vpC5KWkkIf6NnAhVL7zPIK58RpO39F4JOVBadyXv-ilG_KUjeHr9n39nJu1ICFJvpzlBeLNVNuVK1Cad1_q5eo6kUoes/s320/SC+2.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276129989925204482" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrb_XV31WMV20jJ_scfzHsvthxu3lARBosSuKukuPXjmEHYqYOzJtZdLPs3gDRg5wx0Sv-YvFzJgv1qF_hoXwXmLfcmGquM1psxIOOHaVgdMwnL-cvZdLutK67ytkC3yOM2yZL6srYZruG/s1600-h/SC+3.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 210px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrb_XV31WMV20jJ_scfzHsvthxu3lARBosSuKukuPXjmEHYqYOzJtZdLPs3gDRg5wx0Sv-YvFzJgv1qF_hoXwXmLfcmGquM1psxIOOHaVgdMwnL-cvZdLutK67ytkC3yOM2yZL6srYZruG/s320/SC+3.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276129988897423154" 
-             border="0" />
-      </a>
-
-      <span style="font-weight: bold; color: red;">SEMANA SANTA 2003</span><br />
-      <span class="blue-text">Bien temprano en la mañana, prácticamente estaba amaneciendo, tomamos la ruta de la orilla del mar, para llegar hasta </span>
-      <span style="font-weight: bold; color: #3366ff;">SAN CARLOS</span><br /><br />
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifx6B__TZJR6HlJff_dU6RvOyLCVIZWMPneZkaUrfNzu6dZ86BJm5F4EhL-7mQJfbmvPmfD0CBsPIPRpVh6ySDYM53heZihBWDzLTyHCKLTaP1r9ztAB3g69ArEdJQWO88MsUjh9BUZX0q/s1600-h/SC+13.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 214px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifx6B__TZJR6HlJff_dU6RvOyLCVIZWMPneZkaUrfNzu6dZ86BJm5F4EhL-7mQJfbmvPmfD0CBsPIPRpVh6ySDYM53heZihBWDzLTyHCKLTaP1r9ztAB3g69ArEdJQWO88MsUjh9BUZX0q/s320/SC+13.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130573553566306" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR2SSNoHrJYP-V4wqyRGa1labK-eYGHdH2BrdCo68VGYuAgNTwC1XQpPUY7GhFB45laxzh_IQPP392QQgR9VDcjG-vRTxbvmMRP9vERjqY8O0Mu6UhIhaysn4j4ohZchzbOljmfMdUp_Ly/s1600-h/SC+12.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 164px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR2SSNoHrJYP-V4wqyRGa1labK-eYGHdH2BrdCo68VGYuAgNTwC1XQpPUY7GhFB45laxzh_IQPP392QQgR9VDcjG-vRTxbvmMRP9vERjqY8O0Mu6UhIhaysn4j4ohZchzbOljmfMdUp_Ly/s320/SC+12.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130570409966082" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfr2qEiVEod7kVphSE12xLubGoxuhslXuHueDoJ-wTYaNCrlPaXt_RVkkLePCMN_6Zh4zF66nzFcOxDDp6G70XCc-45NVg4R7SjFXEnQzBatxzTIqa0tCWgnTe6JpuQwSqklYjOOChGrO-/s1600-h/SC+11.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 175px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfr2qEiVEod7kVphSE12xLubGoxuhslXuHueDoJ-wTYaNCrlPaXt_RVkkLePCMN_6Zh4zF66nzFcOxDDp6G70XCc-45NVg4R7SjFXEnQzBatxzTIqa0tCWgnTe6JpuQwSqklYjOOChGrO-/s320/SC+11.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130570207948114" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMp8h4Fxjr6oLv4bhcqvRXHubOcw3bM5MrbU_MYlFiIrJ5pjDT3ajtnZ3_9q92xjHHkQ6KXYSrhi-K5MquUGCaqluKR5C0n8VPFhIY1722R6Zz3A7cOtH8kLw9ZT1iKt-FxlH-GmiTFFzp/s1600-h/SC+10.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 188px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMp8h4Fxjr6oLv4bhcqvRXHubOcw3bM5MrbU_MYlFiIrJ5pjDT3ajtnZ3_9q92xjHHkQ6KXYSrhi-K5MquUGCaqluKR5C0n8VPFhIY1722R6Zz3A7cOtH8kLw9ZT1iKt-FxlH-GmiTFFzp/s320/SC+10.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130338893247986" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip_RcfQrgNnua5euK39xEJ_7nl7G5WV34nbFCbp9f05bkOGJGEDtNXp6X4z5dcrstvKoxFGLz_ChKH3qT-f-1PTW-uwKokOxj9H2eYIrPZK0kUae6tDdAHekRVO6zb-STH-BeZf-Z6eV5Z/s1600-h/SC+8.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 203px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip_RcfQrgNnua5euK39xEJ_7nl7G5WV34nbFCbp9f05bkOGJGEDtNXp6X4z5dcrstvKoxFGLz_ChKH3qT-f-1PTW-uwKokOxj9H2eYIrPZK0kUae6tDdAHekRVO6zb-STH-BeZf-Z6eV5Z/s320/SC+8.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130332484643074" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQt3Ok-RH_lC1vtu6uhlRAkEGPzibou9DtPWb3v2EGQk-G-hZBMGJyi5X92rOIYXWkaeRI8RSMQmtG4EKlUSuFkx28y-48XvlubOyQj3lSK3737AHJjh2fQBWjeVI5YxjbkkjNSIsHinf/s1600-h/SC+9.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 176px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYQt3Ok-RH_lC1vtu6uhlRAkEGPzibou9DtPWb3v2EGQk-G-hZBMGJyi5X92rOIYXWkaeRI8RSMQmtG4EKlUSuFkx28y-48XvlubOyQj3lSK3737AHJjh2fQBWjeVI5YxjbkkjNSIsHinf/s320/SC+9.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130333686812754" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn3J_VKoa5J-BSv7XVHdINCuArBnIWi4d7PKAAsSLpnl_zwiPJbRLsKYlawfxDmN6wPLrXCnp_u6ndd9BBcn98afTUvqxfI0AstBJx183FrFlrI9pWqCuD1Q-OXpQov1VMvF-NCq44Vqt0/s1600-h/SC+7.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 197px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn3J_VKoa5J-BSv7XVHdINCuArBnIWi4d7PKAAsSLpnl_zwiPJbRLsKYlawfxDmN6wPLrXCnp_u6ndd9BBcn98afTUvqxfI0AstBJx183FrFlrI9pWqCuD1Q-OXpQov1VMvF-NCq44Vqt0/s320/SC+7.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130328432551682" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh01CXtz2525DQMnp9wjhhSOq5mxbKB8yPVq31dfJDeY-CQYc6Slk4pP86ALiqJE2gG18BpZP9ek4ogvi4ISRQM2hUKiAhD-JUWvxOVVwWYTgK-w6TgeOYeb9CP5j3gRLiuSSzKCT6B3BRl/s1600-h/SC+17.jpg">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 207px; height: 320px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh01CXtz2525DQMnp9wjhhSOq5mxbKB8yPVq31dfJDeY-CQYc6Slk4pP86ALiqJE2gG18BpZP9ek4ogvi4ISRQM2hUKiAhD-JUWvxOVVwWYTgK-w6TgeOYeb9CP5j3gRLiuSSzKCT6B3BRl/s320/SC+17.jpg" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130771166055010" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeZyg8LmQz-jnHvMj-V_5BUegaakpSGzvF6EKPUDxblzYObC1dlb12-gIfrYldwnE1CeoRB9Efmc6fxPBhQyJRUWG0haSAhy2v0oUcVzbRGbHV4XM4C-SepfduA30RGT4xQfa20Q_b8WqI/s1600-h/SC+6.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 218px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeZyg8LmQz-jnHvMj-V_5BUegaakpSGzvF6EKPUDxblzYObC1dlb12-gIfrYldwnE1CeoRB9Efmc6fxPBhQyJRUWG0haSAhy2v0oUcVzbRGbHV4XM4C-SepfduA30RGT4xQfa20Q_b8WqI/s320/SC+6.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130327177475074" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg80gmJIpwlvr42hMXHCSuvg6jmD47CSsbY1q6nv0e9j3IHYBhURxE1AFtwOdnL5qr1cRA7yhO17Tp8HoOY0B8Gqt9Ps9Esmdt37wh8FZDphcGQytAHMmC9rc92PudkLxibVIhhN_kawncW/s1600-h/SC+5.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 208px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg80gmJIpwlvr42hMXHCSuvg6jmD47CSsbY1q6nv0e9j3IHYBhURxE1AFtwOdnL5qr1cRA7yhO17Tp8HoOY0B8Gqt9Ps9Esmdt37wh8FZDphcGQytAHMmC9rc92PudkLxibVIhhN_kawncW/s320/SC+5.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276129999182714114" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzS7QMVIgEXwDy2GZZ8xYC-NGLsUeeNAXNUfp9giMfTsuR-U50kVO_ZmT6zO6SUlGJnFFws8yVtXumHjiWmZ_xZ70pDZDpZ1rk9_c_981uHYGis1_olhI5PxlAsRGj6JRofs15sygAuJhR/s1600-h/SC+14.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 151px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzS7QMVIgEXwDy2GZZ8xYC-NGLsUeeNAXNUfp9giMfTsuR-U50kVO_ZmT6zO6SUlGJnFFws8yVtXumHjiWmZ_xZ70pDZDpZ1rk9_c_981uHYGis1_olhI5PxlAsRGj6JRofs15sygAuJhR/s320/SC+14.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130572611100402" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqT2sHssafY3W2U08yjpOvm2eC0mjdeNVuXmxC6lsq1vQAl25fWiI5tdnhUwzVkjMyDbJC_hSfAsnbTrd6QKiB99E5g9AFnciynYTIYzs7a0JakMtm4JVWqNZm6j1XJv58EZP8oFOBjawO/s1600-h/SC+15.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 163px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqT2sHssafY3W2U08yjpOvm2eC0mjdeNVuXmxC6lsq1vQAl25fWiI5tdnhUwzVkjMyDbJC_hSfAsnbTrd6QKiB99E5g9AFnciynYTIYzs7a0JakMtm4JVWqNZm6j1XJv58EZP8oFOBjawO/s320/SC+15.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130571911636610" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFnAoBuw2Jp5P1jb3W1DGM8MPLvgC5GpfRNn3xnbx3rrLff-36WLfJd9-Z8XCJOYBGwUtG9uVzlwJdlwmrlvLB0L-rdN4fydHaqpS2Qu7wcO-iXVIEihYRjB29MdmxZQCnNB6Tbtkha9VO/s1600-h/SC+4.JPG">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 198px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFnAoBuw2Jp5P1jb3W1DGM8MPLvgC5GpfRNn3xnbx3rrLff-36WLfJd9-Z8XCJOYBGwUtG9uVzlwJdlwmrlvLB0L-rdN4fydHaqpS2Qu7wcO-iXVIEihYRjB29MdmxZQCnNB6Tbtkha9VO/s320/SC+4.JPG" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276129995905615922" 
-             border="0" />
-      </a>
-
-      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-WrnPgD5mrw6I4-29L6TNT6NbA1cx8eszzvdOiM8a_1-KlDUye1Ukn2cdexpBTlKkz4-t4umbtuE6u7Q5UZqws36gPS5kx4X-3cVZCqh14mjJhd14wYM2pmE4tRhEGOXrdSWVdBUT7Aeb/s1600-h/SC+16.jpg">
-        <img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 217px;" 
-             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-WrnPgD5mrw6I4-29L6TNT6NbA1cx8eszzvdOiM8a_1-KlDUye1Ukn2cdexpBTlKkz4-t4umbtuE6u7Q5UZqws36gPS5kx4X-3cVZCqh14mjJhd14wYM2pmE4tRhEGOXrdSWVdBUT7Aeb/s320/SC+16.jpg" 
-             alt="" 
-             id="BLOGGER_PHOTO_ID_5276130773302846306" 
-             border="0" />
-      </a>
-
-      <br />
-    </div>
-
-    <!-- Enlace extra (sin imagen visible) -->
-    <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeveLCywCYu_YSv1xl_xBXoWcn2-M2HlRUsmxfPV5L1H02LGzaeJF9AaczTmvyyKSNtGFJa3yMk2Pckn4kCIP6IFbaBxIDLWtDIC36G7m1WiEIZNF2Tb4uImUGQ2dAXp6dJ9CKoaShw0oa/s1600-h/SC+1.JPG"></a>
-
-    <br /><br />
-
-    <div class="centered">
-      <em>Gracias por recorrer este camino de recuerdos junto a mí.</em><br />
-      <strong>Julio Figueroa</strong>
+    <div class="club-text" data-aos="fade-up">
+      Las expediciones del Club Los Puertos 4x4 se caracterizaban por su planificación meticulosa y el énfasis en la seguridad. Cada salida era una oportunidad para fortalecer los lazos de amistad entre los miembros mientras explorábamos terrenos desafiantes y paisajes espectaculares.
     </div>
   </div>
 
-  <!-- WhatsApp Flotante -->
-  <a href="https://wa.me/584121245521" target="_blank" class="whatsapp-btn">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <div style="text-align: center; margin-top: 60px; padding: 20px;background: #003366;color: #ccc;font-family: Arial,sans-serif;font-size: 0.9rem;border-top: 1px solid #0055b3;">
-  <p>&copy; <span id="current-year"></span> Julio Figueroa</p>
- <p>Preservando recuerdos personales, familiares y profesionales, Hecho con orgullo maracucho</p>
+  <!-- Valores del Club -->
+  <div class="club-section">
+    <h2 class="section-title" data-aos="fade-up">Valores y Principios</h2>
+    
+    <div class="club-values" data-aos="fade-up">
+      <h4 style="color: #065f46; margin-bottom: 1rem;">Nuestros Pilares Fundamentales</h4>
+      <ul class="values-list">
+        <li>Respeto por el medio ambiente y conservación de la naturaleza</li>
+        <li>Seguridad en todas las expediciones y actividades</li>
+        <li>Compañerismo y espíritu de equipo entre los miembros</li>
+        <li>Promoción del turismo responsable en la región</li>
+        <li>Intercambio de conocimientos técnicos sobre vehículos 4x4</li>
+        <li>Apoyo mutuo en situaciones desafiantes del terreno</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Rutas Principales -->
+  <div class="club-section">
+    <h2 class="section-title" data-aos="fade-up">Rutas Emblemáticas</h2>
+    
+    <div class="adventure-highlight" data-aos="fade-up">
+      <h4 style="color: #7c3aed; margin-bottom: 1rem;">Maracaibo - San Carlos del Zulia</h4>
+      <p class="club-text">
+        Nuestra ruta insignia conectaba la ciudad de Maracaibo con la península de San Carlos del Zulia, atravesando diversos tipos de terreno: desde carreteras pavimentadas hasta caminos de tierra, playas y médanos. Esta travesía ofrecía a los participantes la oportunidad de experimentar la diversidad geográfica de nuestra región en una sola expedición.
+      </p>
+    </div>
+
+    <div class="club-text" data-aos="fade-up">
+      El recorrido incluía paradas estratégicas para apreciar la flora y fauna local, así como momentos de descanso en lugares emblemáticos como el faro de San Carlos. Cada expedición era una lección de geografía, historia y técnicas de conducción off-road.
+    </div>
+  </div>
+
+  <!-- Galería de Fotos -->
+  <div class="club-section">
+    <h2 class="section-title" data-aos="fade-up">Momentos Memorables</h2>
+    
+    <div class="photo-gallery">
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="imagenes/puertos_4x4/LP+2.jpg" alt="Vehículos del club en formación">
+        <div class="photo-caption">Preparandonos y esperando bajara la marea para comenzar la aventura.</div>
+      </div>
+      
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="imagenes/puertos_4x4/LP+3.jpg" alt="Paisajes de la ruta">
+        <div class="photo-caption">Formación de vehículos durante una expedición</div>
+      </div>
+      
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+4.jpg" alt="Miembros del club">
+        <div class="photo-caption">El primero en quedarse en la arena, el popular PICURE</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+5.jpg" alt="Miembros del club">
+        <div class="photo-caption">El siguiente en atascar su vehiculo, el popular CHEO</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+6.jpg" alt="Miembros del club">
+        <div class="photo-caption">No podiar quedarse sin acompañar a los otros, el popular GORDO</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+7.jpg" alt="Miembros del club">
+        <div class="photo-caption">El fanfarrón, que no se atascaba, el popular OMER</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+8.jpg" alt="Miembros del club">
+        <div class="photo-caption">El amigo cheo, haciendo efecto el indio</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+9.jpg" alt="Miembros del club">
+        <div class="photo-caption">Hermoso grupo, todos pequeños, Recuerdos alegres</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+10.jpg" alt="Miembros del club">
+        <div class="photo-caption">Plaza central del castillo de San Carlos</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+11.jpg" alt="Miembros del club">
+        <div class="photo-caption">En la garita del Castllo de San Carlos, los protectores del lago de Maracaibo</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+12.jpg" alt="Miembros del club">
+        <div class="photo-caption">Mi hijo Julio, Estudiando los planos de castillo</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+13.jpg" alt="Miembros del club">
+        <div class="photo-caption">Mi hermosa familia, los amo, mis hijo</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+14.jpg" alt="Miembros del club">
+        <div class="photo-caption">Compañeros de aventura y grandes amigos</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+15.jpg" alt="Miembros del club">
+        <div class="photo-caption">Compañeros de aventura y grandes amigos</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+16.jpg" alt="Miembros del club">
+        <div class="photo-caption">Pequeños mis hijos, los amo</div>
+      </div>
+
+      <div class="photo-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="imagenes/puertos_4x4/LP+17.jpg" alt="Miembros del club">
+        <div class="photo-caption">Compañeros de aventura y grandes amigos</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Legado -->
+  <div class="club-section">
+    <h2 class="section-title" data-aos="fade-up">Legado y Reflexiones</h2>
+    
+    <div class="legacy-box" data-aos="fade-up">
+      <h4 style="color: #92400e; margin-bottom: 1rem;">Un Legado de Aventura y Amistad</h4>
+      <p class="club-text">
+        El Club Los Puertos 4x4 representó mucho más que un grupo de entusiastas de los vehículos todo terreno. Fue una familia unida por la pasión por la aventura, el respeto por la naturaleza y el amor por nuestra tierra zuliana. Las experiencias vividas, las amistades forjadas y los conocimientos compartidos durante esos años siguen siendo un tesoro invaluable en mi memoria.
+      </p>
+    </div>
+
+    <div class="club-text" data-aos="fade-up">
+      Como miembro fundador, tengo el orgullo de haber contribuido a crear un espacio donde las personas podían desconectarse de la rutina diaria y conectarse con la naturaleza, mientras desarrollaban habilidades de conducción off-road y fortalecían vínculos de amistad que perduran hasta hoy.
+    </div>
+
+    <div class="club-text" data-aos="fade-up">
+      El club también sirvió como plataforma para promover el turismo interno en Venezuela, mostrando las bellezas naturales del estado Zulia a personas que quizás nunca habrían tenido la oportunidad de conocer estos lugares de manera segura y organizada.
+    </div>
+  </div>
+
+  <!-- Botones de Compartir -->
+  <div class="share-buttons" data-aos="fade-up">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://juliofigu.github.io/jcf/puertos-4x4.html" target="_blank" class="share-btn facebook">
+      <i class="fab fa-facebook-f"></i> Compartir
+    </a>
+    <a href="https://twitter.com/intent/tweet?url=https://juliofigu.github.io/jcf/puertos-4x4.html&text=Club Los Puertos 4x4 por Julio Figueroa" target="_blank" class="share-btn twitter">
+      <i class="fab fa-twitter"></i> Tweetear
+    </a>
+    <a href="https://wa.me/?text=Mira la historia del Club Los Puertos 4x4: https://juliofigu.github.io/jcf/puertos-4x4.html" target="_blank" class="share-btn whatsapp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+
+  <!-- Nota Final -->
+  <div class="footer-note" data-aos="fade-up">
+    "Las mejores aventuras no se miden por los kilómetros recorridos, sino por las experiencias vividas y las amistades forjadas en el camino."
+    <br><br>
+    <strong>- Julio Figueroa, fundador del Club Los Puertos 4x4 🚗🇻🇪</strong>
+  </div>
+
 </div>
 
-<script>
-  document.getElementById('current-year').textContent = new Date().getFullYear();
-</script>
-<script>
-  // Menú hamburguesa
-  const navToggle = document.getElementById('nav-toggle');
-  const navMenu = document.getElementById('nav-menu');
+<!-- WhatsApp Flotante -->
+<a href="https://wa.me/584121245521?text=Hola%20Julio,%20vi%20la%20historia%20del%20Club%20Los%20Puertos%204x4%20y%20me%20pareció%20fascinante" target="_blank" class="whatsapp-float">
+  <div class="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+  <div class="whatsapp-text">
+    <span>¿Te gustó la historia?</span>
+    <small>Escríbeme por WhatsApp</small>
+  </div>
+</a>
 
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 
-  // Cerrar menú al hacer clic en un enlace
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
-    });
-  });
-</script>
 </body>
 </html>
