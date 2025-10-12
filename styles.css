@@ -1266,3 +1266,31 @@ html {
   height: 100%;
   max-height: none;
 }
+
+.dual-photo-layout {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.photo-left {
+  flex: 1;
+}
+
+.photo-left img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.photo-right {
+  flex: 1;
+}
+
+.photo-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
