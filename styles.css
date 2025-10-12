@@ -1290,3 +1290,14 @@ html {
   border-radius: 0.5rem;
 }
 
+@media (max-width: 600px) {
+  .share-buttons {
+    flex-direction: column !important;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  .share-btn {
+    justify-content: center;
+    width: 100%;
+  }
+}
