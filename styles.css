@@ -1262,15 +1262,11 @@ html {
   object-position: center; /* Centra la imagen dentro del contenedor */
 }
 
-.group-photo-vertical {
-  height: 100%;
-  max-height: none;
-}
-
 .dual-photo-layout {
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
+  align-items: flex-start;
 }
 
 .photo-left {
@@ -1279,18 +1275,18 @@ html {
 
 .photo-left img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: auto;
   border-radius: 0.5rem;
 }
 
-.photo-right {
+.photo-right-tall {
   flex: 1;
 }
 
-.photo-right img {
+.photo-right-tall img {
   width: 100%;
-  height: auto;
+  height: 500px; /* Altura fija para estirar la imagen del cangrejo */
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 
