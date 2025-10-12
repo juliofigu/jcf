@@ -1257,7 +1257,7 @@ html {
 
 .group-photo-vertical img {
   height: 100%;        /* Ocupa todo el alto disponible */
-  width: 99%;         /* Mantiene la proporción */
+  width: auto;         /* Mantiene la proporción */
   object-fit: contain;   /* ¡Clave! Mantiene toda la imagen visible */
   object-position: center; /* Centra la imagen dentro del contenedor */
 }
